@@ -14,7 +14,7 @@ To download the package from PyPi:
 
 ## :bookmark_tabs: Usage
 
-Tl:dr `plexiglass.adversarial` contains adversarial attacks and `plexiglass.detectors` contains deepfake detectors. Please refer to (demo.ipynb)[https://github.com/enochkan/plexiglass/blob/main/demo.ipynb] for a detailed example.
+Tl:dr `plexiglass.adversarial` contains adversarial attacks and `plexiglass.detectors` contains deepfake detectors. Please refer to [demo.ipynb](https://github.com/enochkan/plexiglass/blob/main/demo.ipynb) for a detailed example.
 
 ### Simple Usage
 
