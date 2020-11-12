@@ -1,14 +1,14 @@
-# torch-safetynet
+# plexiglass
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-SafetyNet is a PyTorch toolbox for cybersecurity research and testing against adversarial attacks and deepfakes. 
+Plexiglass is a PyTorch toolbox for cybersecurity research and testing against adversarial attacks and deepfakes. 
 
 ## Usage
 
 ```python
 import torch
 import torch.nn as nn
-from safetynet.adversarial import FGSM, test_robustness
+from plexiglass.adversarial import FGSM, test_robustness
 
 device = torch.device("cuda" if use_cuda else "cpu")
 
