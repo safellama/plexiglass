@@ -14,7 +14,7 @@ To download the package from PyPi:
 
 ## :bookmark_tabs: Usage
 
-Tl:dr `plexiglass.adversarial` contains adversarial attacks and `plexiglass.detectors` contains deepfake detectors.
+Tl:dr `plexiglass.adversarial` contains adversarial attacks and `plexiglass.detectors` contains deepfake detectors. Please refer to `demo.ipynb` for a detailed example.
 
 ### Simple Usage
 
@@ -23,7 +23,7 @@ A simple way to test a model's robustness to adversarial attacks is to call `tes
 ```python
 import torch
 import torch.nn as nn
-from plexiglass.adversarial import FGSM, test_robustness
+from plexiglass.adversarial import FGSM, test_robustness 
 
 device = torch.device("cuda" if use_cuda else "cpu")
 
