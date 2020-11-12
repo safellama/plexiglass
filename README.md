@@ -48,9 +48,6 @@ device = torch.device("cuda" if use_cuda else "cpu")
 model.eval()
 attack = FGSM(model=model, loss = nn.CrossEntropyLoss(), eps=0.001, device=device)
 
-# single test_robustness to calculate model accuracy given attack method
-accuracy = test_robustness(model=model, attack=attack, dataloader=loader, device=device)
-
 # alternatively, you can call attack to get the perturbed image
 for images, labels in loader:
     perturbed_images = attack(images, labels).to(device)
