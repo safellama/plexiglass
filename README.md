@@ -3,6 +3,10 @@
 
 Plexiglass is a PyTorch toolbox for cybersecurity research and testing against adversarial attacks and deepfakes. 
 
+## Installation
+
+```pip install --upgrade plexiglass```
+
 ## Usage
 
 ```python
