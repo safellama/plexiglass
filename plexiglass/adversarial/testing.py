@@ -1,11 +1,11 @@
 import torch
 from plexiglass.adversarial.fgsm import FGSM
 
-def test_robustness(model, attack, dataloader, device, eps=None):
-
+def test_robustness(attack, dataloader, device, eps=None):
+    total, correct = 0, 0
     # normal run 
     for images, labels in dataloader:
-            outputs = model(images.to(device))
+            outputs = attack.model(images.to(device))
             labels = labels.to(device)
 
             _, pre = torch.max(outputs.data, 1)
@@ -15,11 +15,12 @@ def test_robustness(model, attack, dataloader, device, eps=None):
 
     # attack run 
 
-    if isinstance(model, FGSM()):
+    if type(attack) == type(FGSM(model=None, loss=None, device=None)):
         for ep in eps:
+            total, correct = 0, 0
             for images, labels in dataloader:   
-                perturbed_images = attack(images, labels).to(device)
-                outputs = model(perturbed_images)
+                perturbed_images = attack(images, labels, ep).to(device)
+                outputs = attack.model(perturbed_images)
                 labels = labels.to(device)
 
                 _, pre = torch.max(outputs.data, 1)
@@ -27,9 +28,10 @@ def test_robustness(model, attack, dataloader, device, eps=None):
                 correct += (pre == labels).sum()
             print('Epsilon: '+str(ep)+' Accuracy: '+str(100 * float(correct) / total))
     else:
+        total, correct = 0, 0
         for images, labels in dataloader:
             perturbed_images = attack(images, labels).to(device)
-            outputs = model(perturbed_images)
+            outputs = attack.model(perturbed_images)
             labels = labels.to(device)
 
             _, pre = torch.max(outputs.data, 1)
