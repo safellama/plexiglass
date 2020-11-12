@@ -1,10 +1,12 @@
-# plexiglass
-[![PyPI version](https://badge.fury.io/py/plexiglass.svg)](https://badge.fury.io/py/plexiglass)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+<p align="center"><a href="https://github.com/enochkan/plexiglass"><img src="https://media.giphy.com/media/26BRFPdvgoVcOFg0E/giphy.gif" alt="plexiglass" height="220"/></a></p>
+<h1 align="center">Plexiglass</h1>
+<p align="center">
+<a href="https://badge.fury.io/py/plexiglass"><img src="https://badge.fury.io/py/plexiglass.svg" alt="PyPI version" height="18"></a>
+<a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="license MIT" height="18"></a>
+</p>
+<p align="center">a PyTorch toolbox for cybersecurity research and testing against adversarial attacks and deepfakes.</p>
 
-Plexiglass is a PyTorch toolbox for cybersecurity research and testing against adversarial attacks and deepfakes. 
-
-## :arrow_down: Installation
+## Installation
 
 Right now, `plexiglass` works with `python <=3.8.3`. 
 
@@ -12,7 +14,7 @@ To download the package from PyPi:
 
 ```pip install --upgrade plexiglass```
 
-## :bookmark_tabs: Usage
+## Usage
 
 Tl:dr `plexiglass.adversarial` contains adversarial attacks and `plexiglass.detectors` contains deepfake detectors. Please refer to [demo.ipynb](https://github.com/enochkan/plexiglass/blob/main/demo.ipynb) for a detailed example.
 
