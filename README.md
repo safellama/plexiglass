@@ -8,7 +8,7 @@
 
 ## Installation
 
-Right now, `plexiglass` works with `python <=3.8.3`. 
+As of now, `plexiglass` works with `python <=3.8.3`. 
 
 To download the package from PyPi:
 
