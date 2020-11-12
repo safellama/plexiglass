@@ -1,4 +1,5 @@
 # plexiglass
+[![PyPI version](https://badge.fury.io/py/plexiglass.svg)](https://badge.fury.io/py/plexiglass)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Plexiglass is a PyTorch toolbox for cybersecurity research and testing against adversarial attacks and deepfakes. 
