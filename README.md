@@ -6,6 +6,8 @@ Plexiglass is a PyTorch toolbox for cybersecurity research and testing against a
 
 ## :arrow_down: Installation
 
+Right now, `plexiglass` works with `python <=3.8.3`. 
+
 To download the package from PyPi:
 
 ```pip install --upgrade plexiglass```
