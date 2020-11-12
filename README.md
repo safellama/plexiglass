@@ -65,6 +65,8 @@ for images, labels in loader:
 
 ### Deepfake Detection
 
+Deepfake detectors are also available for training in Plexiglass. 
+
 ```python
 import torch
 import torch.nn as nn
