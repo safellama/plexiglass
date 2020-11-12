@@ -39,6 +39,8 @@ accuracy = test_robustness(model=model, attack=attack, dataloader=loader, device
 
 ### Manual Testing
 
+Alternatively, you can call the predefined method of attack to get the perturbed image for manual testing functions.
+
 ```python
 import torch
 import torch.nn as nn
