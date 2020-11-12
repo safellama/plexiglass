@@ -1,6 +1,19 @@
 import torch
+from adversarial.fgsm import FGSM
 
-def test_robustness(model, attack, dataloader, device):
+def test_robustness(model, attack, dataloader, device, eps=None):
+    if isinstance(model, FGSM()):
+        for ep in eps:
+            for images, labels in dataloader:   
+                perturbed_images = attack(images, labels).to(device)
+                outputs = model(perturbed_images)
+                labels = labels.to(device)
+
+                _, pre = torch.max(outputs.data, 1)
+                total += 1
+                correct += (pre == labels).sum()
+                print('Epsilon: '+str(ep)+' Accuracy: '+str(100 * float(correct) / total))
+
     for images, labels in dataloader:
         perturbed_images = attack(images, labels).to(device)
         outputs = model(perturbed_images)
@@ -9,4 +22,4 @@ def test_robustness(model, attack, dataloader, device):
         _, pre = torch.max(outputs.data, 1)
         total += 1
         correct += (pre == labels).sum()
-    return (100 * float(correct) / total)
+    print('Accuracy: '+ str(100 * float(correct) / total))
