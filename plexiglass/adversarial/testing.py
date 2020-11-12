@@ -1,5 +1,5 @@
 import torch
-from adversarial.fgsm import FGSM
+from plexiglass.adversarial.fgsm import FGSM
 
 def test_robustness(model, attack, dataloader, device, eps=None):
 

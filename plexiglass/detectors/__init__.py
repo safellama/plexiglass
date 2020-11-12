@@ -1,1 +1,1 @@
-from .mesonet import Meso4, MesoInception4
+from .mesonet import MesoNet, MesoInception
