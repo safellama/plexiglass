@@ -1,8 +1,8 @@
 import torch
 
 class FGSM:
-    def __init__(self, model, loss, eps):
-        self.device = torch.device("cuda" if use_cuda else "cpu")
+    def __init__(self, model, loss, eps, device):
+        self.device = device
         self.model = model
         self.loss = loss
         self.eps = eps

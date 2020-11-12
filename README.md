@@ -8,7 +8,9 @@ SafetyNet is a PyTorch toolbox for cybersecurity research and testing against ad
 ```python
 import torch
 import torch.nn as nn
-from safetynet.adversarial import FGSM
+from safetynet.adversarial import FGSM, test_robustness
+
+device = torch.device("cuda" if use_cuda else "cpu")
 
 # ... ... ... #
 # load model  #
@@ -16,8 +18,12 @@ from safetynet.adversarial import FGSM
 
 # fast_gradient_sign_method
 model.eval()
-attack = FGSM(model=model, loss = nn.CrossEntropyLoss(), eps=0.001)
+attack = FGSM(model=model, loss = nn.CrossEntropyLoss(), eps=0.001, device=device)
 
+# single test_robustness to calculate model accuracy given attack method
+accuracy = test_robustness(model=model, attack=attack, dataloader=loader, device=device)
+
+# alternatively, you can call attack to get the perturbed image
 for images, labels in loader:
     perturbed_images = attack(images, labels).to(device)
     outputs = model(perturbed_images)
