@@ -10,6 +10,8 @@ Plexiglass is a PyTorch toolbox for cybersecurity research and testing against a
 
 ## :bookmark_tabs: Usage
 
+Tl:dr `plexiglass.adversarial` contains adversarial attacks and `plexiglass.detectors` contains deepfake detectors.
+
 ### Simple Usage
 
 ```python
