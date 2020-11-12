@@ -10,7 +10,7 @@ Plexiglass is a PyTorch toolbox for cybersecurity research and testing against a
 
 ## :bookmark_tabs: Usage
 
-### Simple Ussage
+### Simple Usage
 
 ```python
 import torch
@@ -40,6 +40,7 @@ for images, labels in loader:
 ```
 
 ### Manual Testing
+
 ```python
 import torch
 import torch.nn as nn
