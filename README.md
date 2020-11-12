@@ -6,6 +6,8 @@ Plexiglass is a PyTorch toolbox for cybersecurity research and testing against a
 
 ## :arrow_down: Installation
 
+To download the package from PyPi:
+
 ```pip install --upgrade plexiglass```
 
 ## :bookmark_tabs: Usage
@@ -13,6 +15,8 @@ Plexiglass is a PyTorch toolbox for cybersecurity research and testing against a
 Tl:dr `plexiglass.adversarial` contains adversarial attacks and `plexiglass.detectors` contains deepfake detectors.
 
 ### Simple Usage
+
+A simple way to test a model's robustness to adversarial attacks is to call `test_robustness`, which outputs a model's accuracy before and after the attack. 
 
 ```python
 import torch
