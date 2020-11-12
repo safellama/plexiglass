@@ -29,14 +29,6 @@ attack = FGSM(model=model, loss = nn.CrossEntropyLoss(), eps=0.001, device=devic
 
 # single test_robustness to calculate model accuracy given attack method
 accuracy = test_robustness(model=model, attack=attack, dataloader=loader, device=device)
-
-# alternatively, you can call attack to get the perturbed image
-for images, labels in loader:
-    perturbed_images = attack(images, labels).to(device)
-    outputs = model(perturbed_images)
-    labels = labels.to(device)
-
-    # calculate accuracy
 ```
 
 ### Manual Testing
