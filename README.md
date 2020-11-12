@@ -56,3 +56,13 @@ for images, labels in loader:
 
     # calculate accuracy
 ```
+
+### Deepfake Detection
+
+```python
+import torch
+import torch.nn as nn
+from plexiglass.detectors import MesoInception
+
+model = MesoInception()
+```

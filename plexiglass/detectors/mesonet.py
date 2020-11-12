@@ -1,9 +1,9 @@
 import torch
 import torch.nn as nn
 
-class Meso4(nn.Module):
+class MesoNet(nn.Module):
 	def __init__(self, num_classes=2):
-		super(Meso4, self).__init__()
+		super(MesoNet, self).__init__()
 		self.num_classes = num_classes
 		self.conv1 = nn.Conv2d(3, 8, 3, padding=1, bias=False)
 		self.bn1 = nn.BatchNorm2d(8)
@@ -46,9 +46,9 @@ class Meso4(nn.Module):
 		return x
 
 
-class MesoInception4(nn.Module):
+class MesoInception(nn.Module):
 	def __init__(self, num_classes=2):
-		super(MesoInception4, self).__init__()
+		super(MesoInception, self).__init__()
 		self.num_classes = num_classes
 
 		self.Incption1_conv1 = nn.Conv2d(3, 1, 1, padding=0, bias=False)
