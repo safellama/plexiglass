@@ -52,10 +52,6 @@ from plexiglass.adversarial import FGSM, test_robustness
 
 device = torch.device("cuda" if use_cuda else "cpu")
 
-# ... ... ... #
-# load model  #
-# ... ... ... #
-
 # fast_gradient_sign_method
 model.eval()
 attack = FGSM(model=model, loss = nn.CrossEntropyLoss(), eps=0.001, device=device)
@@ -71,7 +67,7 @@ for images, labels in loader:
 
 ### Deepfake Detection
 
-Deepfake detectors are also available for training in Plexiglass. 
+Deepfake detectors are also available for training in Plexiglass. Currently, only MesoNet/ MesoInception are available for use.
 
 ```python
 import torch
