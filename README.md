@@ -67,7 +67,7 @@ for images, labels in loader:
 
 ### Deepfake Detection
 
-Deepfake detectors are also available for training in Plexiglass. Currently, only MesoNet/ MesoInception are available for use.
+Deepfake detectors are also available for training in Plexiglass. Currently, only MesoNet/ MesoInception are available for use. 
 
 ```python
 import torch
