@@ -1,4 +1,4 @@
-<p align="center"><a href="https://github.com/enochkan/plexiglass"><img src="https://media.giphy.com/media/26BRFPdvgoVcOFg0E/giphy.gif" alt="plexiglass" height="220"/></a></p>
+<p align="center"><a href="https://github.com/enochkan/plexiglass"><img src="https://st2.depositphotos.com/2465171/7074/v/600/depositphotos_70744641-stock-illustration-glass-plate-background-with-rivets.jpg" alt="plexiglass" height="220"/></a></p>
 <h1 align="center">Plexiglass</h1>
 <p align="center">
 <a href="https://badge.fury.io/py/plexiglass"><img src="https://badge.fury.io/py/plexiglass.svg" alt="PyPI version" height="18"></a>
