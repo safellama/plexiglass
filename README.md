@@ -8,6 +8,8 @@
 
 ## Installation
 
+The first stable release is version `1.1.9`.
+
 To download the package from PyPi:
 
 ```pip install --upgrade plexiglass```
