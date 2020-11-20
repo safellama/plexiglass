@@ -1,12 +1,12 @@
-import torch
 from .fgsm import FGSM
+import torch
 import matplotlib.pyplot as plt
 
 def test_robustness(attack, dataloader, device, eps=None, plot=False):
 
     if plot and type(attack) != type(FGSM(model=None, loss=None, device=None)):
         print('Please set plot to False when attack is not FGSM')
-        break
+        return 
 
     total, correct = 0, 0
     # normal run 
