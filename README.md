@@ -8,7 +8,7 @@
 
 ## Installation
 
-The first stable release is version `1.1.9`.
+The first stable release is version `1.2.0`.
 
 To download the package from PyPi:
 
