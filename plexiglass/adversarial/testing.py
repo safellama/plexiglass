@@ -1,6 +1,7 @@
 from .fgsm import FGSM
 import torch
 import matplotlib.pyplot as plt
+import numpy as np
 
 def test_robustness(attack, dataloader, device, eps=None, plot=False):
 
