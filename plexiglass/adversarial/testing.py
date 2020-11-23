@@ -1,6 +1,7 @@
 from .fgsm import FGSM
 import torch
 import matplotlib.pyplot as plt
+import numpy as np
 
 def test_robustness(attack, dataloader, device, eps=None, plot=False):
 
@@ -39,7 +40,7 @@ def test_robustness(attack, dataloader, device, eps=None, plot=False):
         
         # plotting
         plt.figure(figsize=(5,5))
-        plt.plot(epsilons, accuracies, "*-")
+        plt.plot(epsilon, accuracies, "*-")
         plt.yticks(np.arange(0, 1.1, step=0.1))
         plt.xticks(np.arange(min(epsilon), max(epsilon), step=0.05))
         plt.title("Accuracy vs Epsilon")
