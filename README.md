@@ -76,3 +76,5 @@ from plexiglass.detectors import MesoInception
 
 model = MesoInception()
 ```
+
+To request new features, please submit an [issue](https://github.com/enochkan/plexiglass/issues)
