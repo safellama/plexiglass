@@ -9,7 +9,7 @@ setup(
     description="PyTorch toolbox for cybersecurity research and testing against adversarial attacks and deepfakes.",
     url="https://github.com/enochkan/plexiglass",
     author="Chi Nok Enoch Kan @chinokenochkan",
-    install_requires=[],
+    install_requires=['torch>=1.7.0'],
     include_package_data=True,
     packages=find_packages()
 )
