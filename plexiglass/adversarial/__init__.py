@@ -1,4 +1,4 @@
-from .testing import test_robustness
+from .deepfool import DeepFool
 from .fgsm import FGSM
 from .pgd import PGD
-from .deepfool import DeepFool
+from .testing import test_robustness

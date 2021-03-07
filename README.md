@@ -12,7 +12,7 @@ The first stable release is version `1.2.0`.
 
 To download the package from PyPi:
 
-```pip install --upgrade plexiglass```
+`pip install --upgrade plexiglass`
 
 ## Usage
 
@@ -20,12 +20,12 @@ Tl:dr `plexiglass.adversarial` contains adversarial attacks and `plexiglass.dete
 
 ### Simple Usage
 
-A simple way to test a model's robustness to adversarial attacks is to call `test_robustness`, which outputs a model's accuracy before and after the attack. 
+A simple way to test a model's robustness to adversarial attacks is to call `test_robustness`, which outputs a model's accuracy before and after the attack.
 
 ```python
 import torch
 import torch.nn as nn
-from plexiglass.adversarial import FGSM, test_robustness 
+from plexiglass.adversarial import FGSM, test_robustness
 
 device = torch.device("cuda" if use_cuda else "cpu")
 
@@ -67,7 +67,7 @@ for images, labels in loader:
 
 ### Deepfake Detection
 
-Deepfake detectors are also available for training in Plexiglass. Currently, only MesoNet/ MesoInception are available for use. 
+Deepfake detectors are also available for training in Plexiglass. Currently, only MesoNet/ MesoInception are available for use.
 
 ```python
 import torch
@@ -78,3 +78,13 @@ model = MesoInception()
 ```
 
 To request new features, please submit an [issue](https://github.com/enochkan/plexiglass/issues)
+
+### Local Development
+
+TL;DR to get started
+
+```python
+make develop
+```
+
+this will clean, build, and install the package locally for development purpose.
