@@ -1,7 +1,8 @@
-import torch
 import numpy as np
+import torch
 
-class DeepFool():
+
+class DeepFool:
     # max_iter=50, clip_max=0.5, clip_min=-0.5
     def __init__(self, max_iter, clip_max, clip_min):
         self.max_iter = max_iter
@@ -13,7 +14,7 @@ class DeepFool():
         nx.requires_grad_()
         eta = torch.zeros(nx.shape)
 
-        out = model(nx+eta)
+        out = model(nx + eta)
         n_class = out.shape[1]
         py = out.max(1)[1].item()
         ny = out.max(1)[1].item()
@@ -39,16 +40,16 @@ class DeepFool():
                 value_i = np.abs(fi.item()) / np.linalg.norm(wi.numpy().flatten())
 
                 if value_i < value_l:
-                    ri = value_i/np.linalg.norm(wi.numpy().flatten()) * wi
+                    ri = value_i / np.linalg.norm(wi.numpy().flatten()) * wi
 
             eta += ri.clone()
             nx.grad.data.zero_()
-            out = model(nx+eta)
+            out = model(nx + eta)
             py = out.max(1)[1].item()
             i_iter += 1
-        
+
         x_adv = nx + eta
         x_adv.clamp_(self.clip_min, self.clip_max)
         x_adv.squeeze_(0)
-        
+
         return x_adv.detach()
