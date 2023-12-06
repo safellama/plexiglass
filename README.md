@@ -4,7 +4,7 @@
 <a href="https://badge.fury.io/py/plexiglass"><img src="https://badge.fury.io/py/plexiglass.svg" alt="PyPI version" height="18"></a>
 <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="license MIT" height="18"></a>
 </p>
-<p align="center">a toolbox for cybersecurity research and testing against adversarial attacks in DNNs and LLMs. </p>
+<p align="center">a toolbox for testing against adversarial attacks in DNNs and LLMs. </p>
 
 ## TL;DR
 
