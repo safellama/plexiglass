@@ -38,7 +38,7 @@ A simple way to test a model's robustness to adversarial attacks is to call `tes
 ```python
 import torch
 import torch.nn as nn
-from plexiglass.adversarial import FGSM, test_robustness
+from plexiglass.DNN.adversarial import FGSM, test_robustness
 
 device = torch.device("cuda" if use_cuda else "cpu")
 
@@ -94,7 +94,7 @@ To request new features, please submit an [issue](https://github.com/enochkan/pl
 
 ### Local Development
 
-TL;DR to get started
+To get started
 
 ```python
 make develop
