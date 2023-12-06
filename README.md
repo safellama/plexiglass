@@ -29,7 +29,7 @@ To download the package from PyPi:
 
 ## Usage
 
-`plexiglass.adversarial` contains adversarial attacks and `plexiglass.detectors` contains deepfake detectors. Please refer to [demo.ipynb](https://github.com/enochkan/plexiglass/blob/main/demo.ipynb) for a detailed example.
+`plexiglass.DNN.adversarial` contains adversarial attacks and `plexiglass.DNN.detectors` contains deepfake detectors. Please refer to [demo.ipynb](https://github.com/kortex-labs/plexiglass/blob/main/demo.ipynb) for a detailed example.
 
 ### DNN Module: Simple Usage
 
@@ -53,6 +53,10 @@ attack = FGSM(model=model, loss = nn.CrossEntropyLoss(), eps=0.001, device=devic
 # single test_robustness to calculate model accuracy given attack method
 accuracy = test_robustness(model=model, attack=attack, dataloader=loader, device=device)
 ```
+
+### LLM Module: Simple Usage
+> [!NOTE] 
+> coming soon
 
 ### Manual Testing
 
