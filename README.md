@@ -52,7 +52,7 @@ attack = FGSM(model=model, loss = nn.CrossEntropyLoss(), eps=0.001, device=devic
 accuracy = test_robustness(model=model, attack=attack, dataloader=loader, device=device)
 ```
 
-### Manual Testing
+### DNN Module: Manual Testing
 
 Alternatively, you can call the predefined method of attack to get the perturbed image for manual testing functions.
 
