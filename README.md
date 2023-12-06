@@ -31,7 +31,7 @@ To download the package from PyPi:
 
 `plexiglass.adversarial` contains adversarial attacks and `plexiglass.detectors` contains deepfake detectors. Please refer to [demo.ipynb](https://github.com/enochkan/plexiglass/blob/main/demo.ipynb) for a detailed example.
 
-### Simple Usage
+### DNN Module: Simple Usage
 
 A simple way to test a model's robustness to adversarial attacks is to call `test_robustness`, which outputs a model's accuracy before and after the attack.
 
@@ -78,7 +78,7 @@ for images, labels in loader:
     # calculate accuracy
 ```
 
-### Deepfake Detection
+### DNN module: deepfake Detection
 
 Deepfake detectors are also available for training in Plexiglass. Currently, only MesoNet/ MesoInception are available for use.
 
