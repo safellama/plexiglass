@@ -33,7 +33,7 @@ To download the package from PyPi:
 
 ### DNN Module: Simple Usage
 
-A simple way to test a model's robustness to adversarial attacks is to call `test_robustness`, which outputs a model's accuracy before and after the attack.
+A simple way to test a deep neural network's robustness to adversarial attacks is to call `test_robustness`, which outputs a DNN's accuracy before and after the attack.
 
 ```python
 import torch
@@ -53,10 +53,6 @@ attack = FGSM(model=model, loss = nn.CrossEntropyLoss(), eps=0.001, device=devic
 # single test_robustness to calculate model accuracy given attack method
 accuracy = test_robustness(model=model, attack=attack, dataloader=loader, device=device)
 ```
-
-### LLM Module: Simple Usage
-> [!NOTE] 
-> coming soon
 
 ### Manual Testing
 
@@ -82,7 +78,7 @@ for images, labels in loader:
     # calculate accuracy
 ```
 
-### DNN module: deepfake Detection
+### DNN module: Deepfake Detection
 
 Deepfake detectors are also available for training in Plexiglass. Currently, only MesoNet/ MesoInception are available for use.
 
@@ -94,6 +90,11 @@ from plexiglass.detectors import MesoInception
 model = MesoInception()
 ```
 
+### LLM Module: Simple Usage
+> [!NOTE] 
+> coming soon
+
+### Feature Request
 To request new features, please submit an [issue](https://github.com/enochkan/plexiglass/issues)
 
 ### Local Development
