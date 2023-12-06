@@ -8,7 +8,7 @@
 
 ## TL;DR
 
-This is a Python research toolbox which supports adversarial testing in DNNs and LLMs. We currently support the following frameworks:
+This is a Python research toolbox which supports adversarial testing in deep learning. It has two modules: DNN and LLM. We currently support the following frameworks:
 
 ### DNNs
 - torch
