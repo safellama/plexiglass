@@ -17,7 +17,7 @@ This is a Python research toolbox which supports adversarial testing in deep lea
 - openai api 
 - cohere api
 
-Check out the demo.ipynb for examples. For development, use make develop. Contribute or report issues on the GitHub page.
+Check out the `demo.ipynb` in the `demos` for usage examples. For development, use `make develop`. Contribute or report issues on the GitHub page.
 
 ## Installation
 
