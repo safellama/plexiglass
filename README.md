@@ -4,7 +4,20 @@
 <a href="https://badge.fury.io/py/plexiglass"><img src="https://badge.fury.io/py/plexiglass.svg" alt="PyPI version" height="18"></a>
 <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="license MIT" height="18"></a>
 </p>
-<p align="center">a PyTorch toolbox for cybersecurity research and testing against adversarial attacks and deepfakes.</p>
+<p align="center">a toolbox for cybersecurity research and testing against adversarial attacks in DNNs and LLMs. </p>
+
+## TL;DR
+
+This is a Python research toolbox which supports adversarial testing in DNNs and LLMs. We currently support the following frameworks:
+
+### DNNs
+- torch
+
+### LLMs
+- openai api 
+- cohere api
+
+Check out the demo.ipynb for examples. For development, use make develop. Contribute or report issues on the GitHub page.
 
 ## Installation
 
@@ -16,7 +29,7 @@ To download the package from PyPi:
 
 ## Usage
 
-Tl:dr `plexiglass.adversarial` contains adversarial attacks and `plexiglass.detectors` contains deepfake detectors. Please refer to [demo.ipynb](https://github.com/enochkan/plexiglass/blob/main/demo.ipynb) for a detailed example.
+`plexiglass.adversarial` contains adversarial attacks and `plexiglass.detectors` contains deepfake detectors. Please refer to [demo.ipynb](https://github.com/enochkan/plexiglass/blob/main/demo.ipynb) for a detailed example.
 
 ### Simple Usage
 
