@@ -29,8 +29,6 @@ To download the package from PyPi:
 
 ## Usage
 
-`plexiglass.DNN.adversarial` contains adversarial attacks and `plexiglass.DNN.detectors` contains deepfake detectors. Please refer to [demo.ipynb](https://github.com/kortex-labs/plexiglass/blob/main/demo.ipynb) for a detailed example.
-
 ### DNN Module: Simple Usage
 
 A simple way to test a deep neural network's robustness to adversarial attacks is to call `test_robustness`, which outputs a DNN's accuracy before and after the attack.
