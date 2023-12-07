@@ -83,7 +83,7 @@ Deepfake detectors are also available for training in Plexiglass. Currently, onl
 ```python
 import torch
 import torch.nn as nn
-from plexiglass.detectors import MesoInception
+from plexiglass.defense import MesoInception
 
 model = MesoInception()
 ```
