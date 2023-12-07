@@ -1,4 +1,4 @@
-![plexiglass logo](assets/plexiglass.jpg)
+![plexiglass logo](assets/plexiglass.png)
 <h1 align="center">Plexiglass</h1>
 <p align="center">
 <a href="https://badge.fury.io/py/plexiglass"><img src="https://badge.fury.io/py/plexiglass.svg" alt="PyPI version" height="18"></a>
@@ -16,7 +16,7 @@ Plexiglass is a Python research toolbox which supports adversarial testing in de
 ### LLMs
 - OpenAI 
 
-Check out the `demo.ipynb` in the `demos` for usage examples. For development, use `make develop`. Contribute or report issues on the GitHub page.
+We are working tirelessly to include more frameworks and attack/ defense mechanisms for testing. Please read our docs for the latest updates.
 
 > [!NOTE]
 > Plexiglass is open-source: Please leave a star to support the project! ⭐
