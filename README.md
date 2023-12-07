@@ -1,4 +1,4 @@
-![Alt text](URL_OF_THE_IMAGE)
+![plexiglass logo](assets/plexiglass.jpg)
 <h1 align="center">Plexiglass</h1>
 <p align="center">
 <a href="https://badge.fury.io/py/plexiglass"><img src="https://badge.fury.io/py/plexiglass.svg" alt="PyPI version" height="18"></a>
