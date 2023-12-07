@@ -9,13 +9,7 @@ Plexiglass</h1>
 
 ## What is Plexiglass?
 
-Plexiglass is a Python research toolbox which supports adversarial testing in deep learning. It has two modules: DNN and LLM. We currently support the following frameworks:
-
-### DNNs
-- torch
-
-### LLMs
-- OpenAI 
+Plexiglass is a Python research toolbox which supports adversarial testing in deep learning. It has two modules: DNN and LLM. For LLMs, plexiglass uses [litellm](https://github.com/BerriAI/litellm) under the hood. 
 
 We are working tirelessly to include more frameworks and attack/ defense mechanisms for testing. Please read our docs for the latest updates.
 
