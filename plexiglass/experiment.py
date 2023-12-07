@@ -1,8 +1,8 @@
-from plexiglass.LLM.model import PlexiglassModel
+from plexiglass.LLM.model import Model
 import pandas as pd
 import time
 
-class PlexiglassExperiment:
+class Experiment:
     def __init__(self, parameters: dict):
         self.parameters = parameters
         self.models = []
@@ -23,7 +23,7 @@ class PlexiglassExperiment:
 
     def run(self):
         for model in self.parameters["models"]:
-            self.models.append(PlexiglassModel(model_name=model["model_name"], model_type=model["model_type"]))
+            self.models.append(Model(model_name=model["model_name"], model_type=model["model_type"]))
         
         for model in self.models:
             latency_ms, result = self.measure_latency(model.prompt, [{"role": "user", "content": self.parameters["prompt"]}])
