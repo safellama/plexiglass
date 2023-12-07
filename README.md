@@ -6,18 +6,24 @@
 </p>
 <p align="center">a toolbox for testing against adversarial attacks in DNNs and LLMs. </p>
 
-## TL;DR
+## What is Plexiglass?
 
-This is a Python research toolbox which supports adversarial testing in deep learning. It has two modules: DNN and LLM. We currently support the following frameworks:
+Plexiglass is a Python research toolbox which supports adversarial testing in deep learning. It has two modules: DNN and LLM. We currently support the following frameworks:
 
 ### DNNs
 - torch
 
 ### LLMs
-- openai api 
-- cohere api
+- OpenAI 
 
 Check out the `demo.ipynb` in the `demos` for usage examples. For development, use `make develop`. Contribute or report issues on the GitHub page.
+
+> [!NOTE]
+> Plexiglass is open-source: Please leave a star to support the project! ⭐
+
+## What is Adversarial Machine Learning?
+
+Adversarial machine learning involves manipulating input data to deceive machine learning models. In deep neural networks (DNNs) and large language models (LLMs), attacks include adding subtly modified inputs that cause incorrect model predictions or responses. These attacks exploit model vulnerabilities, testing their robustness and security.
 
 ## Installation
 
@@ -27,7 +33,7 @@ To download the package from PyPi:
 
 `pip install --upgrade plexiglass`
 
-## Usage
+## Getting Started
 
 ### DNN Module: Simple Usage
 
