@@ -36,7 +36,7 @@ A simple way to test a deep neural network's robustness to adversarial attacks i
 ```python
 import torch
 import torch.nn as nn
-from plexiglass.DNN.adversarial import FGSM, test_robustness
+from plexiglass.DNN.attacks import FGSM, test_robustness
 
 device = torch.device("cuda" if use_cuda else "cpu")
 
@@ -59,7 +59,7 @@ Alternatively, you can call the predefined method of attack to get the perturbed
 ```python
 import torch
 import torch.nn as nn
-from plexiglass.adversarial import FGSM, test_robustness
+from plexiglass.attacks import FGSM, test_robustness
 
 device = torch.device("cuda" if use_cuda else "cpu")
 
