@@ -1,28 +1,34 @@
 [build-system]
-requires = ["setuptools", "wheel"]
+requires = ["setuptools>=61.0.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "plexiglass"
-version = "0.1.0"  # Replace with the actual version or dynamic retrieval logic
-description = "A toolbox for adversarial attack research on DNNs and LLMs."
+version = "0.0.1"  # Replace with the actual version
+description = "A Python Machine Learning Security Toolbox for Adversarial Attacks."
 readme = "README.md"
-authors = [
-    { name = "Chi Nok Enoch Kan", email = "your-email@example.com" }  # Replace with actual email
-]
+authors = [{ name = "Chi Nok Enoch Kan", email = "your-email@example.com" }]  # Replace with actual email
 license = { file = "LICENSE" }  # If you have a LICENSE file
-homepage = "https://github.com/kortex-labs/plexiglass"
-repository = "https://github.com/kortex-labs/plexiglass"
+classifiers = [
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    # Add other relevant classifiers
+]
 keywords = ["adversarial", "DNN", "LLM"]  # Add more relevant keywords
+dependencies = [
+    "torch >= 1.7.0",
+    "litellm",  # Specify version if needed
+    "detoxify",  # Specify version if needed
+]
+requires-python = ">=3.6"  # Specify your minimum Python version
 
 [project.urls]
-Bug Tracker = "https://github.com/kortex-labs/plexiglass/issues"
+Homepage = "https://github.com/kortex-labs/plexiglass"
+Issues = "https://github.com/kortex-labs/plexiglass/issues"
 
-[project.dependencies]
-torch = ">=1.7.0"
-litellm = ""
-detoxify = ""
+# Add any optional dependencies or scripts if you have them
+# [project.optional-dependencies]
+# dev = ["dependency1", "dependency2"]
 
-[tool.setuptools]
-include-package-data = true
-packages = "find:"
+# [project.scripts]
+# script_name = "module:function"

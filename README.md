@@ -1,5 +1,5 @@
 <h1 align="center">
-<img src="assets/plexiglass.png" width="80" height="80"><br>
+<img src="plexiglass/assets/plexiglass.png" width="80" height="80"><br>
 Plexiglass</h1>
 <p align="center">
 Wondering if your AI model is safe enough to use? Plexiglass is your sparring partner to bolster your model's defenses!<br><br>
