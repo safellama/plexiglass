@@ -48,61 +48,19 @@ eval(model, metrics=["toxicity"], attacks=["prompt_injection", "gcg"])
 
 ### DNN Module: Simple Usage
 
-A simple way to test a deep neural network's robustness to adversarial attacks is to call `test_robustness`, which outputs a DNN's accuracy before and after the attack.
+Here is an example on how to test a model's robustness on FGSM attacks:
 
 ```python
-import torch
-import torch.nn as nn
-from plexiglass.DNN.attacks import FGSM, test_robustness
+from plexiglass.DNN import eval
+from plexiglass.model import Model
 
-device = torch.device("cuda" if use_cuda else "cpu")
+import os
 
-# ... ... ... #
-# load model  #
-# ... ... ... #
+# load your pytorch model here
 
-# fast_gradient_sign_method
-model.eval()
-attack = FGSM(model=model, loss = nn.CrossEntropyLoss(), eps=0.001, device=device)
+model = Model("torch", your-model)
 
-# single test_robustness to calculate model accuracy given attack method
-accuracy = test_robustness(model=model, attack=attack, dataloader=loader, device=device)
-```
-
-### DNN Module: Manual Testing
-
-Alternatively, you can call the predefined method of attack to get the perturbed image for manual testing functions.
-
-```python
-import torch
-import torch.nn as nn
-from plexiglass.attacks import FGSM, test_robustness
-
-device = torch.device("cuda" if use_cuda else "cpu")
-
-# fast_gradient_sign_method
-model.eval()
-attack = FGSM(model=model, loss = nn.CrossEntropyLoss(), eps=0.001, device=device)
-
-# alternatively, you can call attack to get the perturbed image
-for images, labels in loader:
-    perturbed_images = attack(images, labels).to(device)
-    outputs = model(perturbed_images)
-    labels = labels.to(device)
-
-    # calculate accuracy
-```
-
-### DNN module: Deepfake Detection
-
-Deepfake detectors are also available for training in Plexiglass. Currently, only MesoNet/ MesoInception are available for use.
-
-```python
-import torch
-import torch.nn as nn
-from plexiglass.defense import MesoInception
-
-model = MesoInception()
+eval(model, metrics=["accuracy"], attacks=["fgsm"])
 ```
 
 ### Feature Request
