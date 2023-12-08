@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "plexiglass"
+version = "0.1.0"  # Replace with the actual version or dynamic retrieval logic
+description = "A toolbox for adversarial attack research on DNNs and LLMs."
+readme = "README.md"
+authors = [
+    { name = "Chi Nok Enoch Kan", email = "your-email@example.com" }  # Replace with actual email
+]
+license = { file = "LICENSE" }  # If you have a LICENSE file
+homepage = "https://github.com/kortex-labs/plexiglass"
+repository = "https://github.com/kortex-labs/plexiglass"
+keywords = ["adversarial", "DNN", "LLM"]  # Add more relevant keywords
+
+[project.urls]
+Bug Tracker = "https://github.com/kortex-labs/plexiglass/issues"
+
+[project.dependencies]
+torch = ">=1.7.0"
+litellm = ""
+detoxify = ""
+
+[tool.setuptools]
+include-package-data = true
+packages = "find:"

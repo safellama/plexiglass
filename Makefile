@@ -1,3 +1,4 @@
+#TODO: add prod
 ENVIRONMENT := development
 
 OS := $(shell uname -s)

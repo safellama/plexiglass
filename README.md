@@ -2,16 +2,20 @@
 <img src="assets/plexiglass.png" width="80" height="80"><br>
 Plexiglass</h1>
 <p align="center">
+Wondering if your AI model is safe enough to use? Plexiglass is your sparring partner to bolster your model's defenses!<br><br>
 <a href="https://badge.fury.io/py/plexiglass"><img src="https://badge.fury.io/py/plexiglass.svg" alt="PyPI version" height="18"></a>
 <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-apache2.0-yellow.svg" alt="license MIT" height="18"></a>
 </p>
-<p align="center">A Python Machine Learning Security Toolbox for Adversarial Attacks. Works with LLMs, DNNs, and other machine learning algorithms.</p>
+<!-- <p align="center">A Python Machine Learning Security Toolbox for Adversarial Attacks. Works with LLMs, DNNs, and other machine learning algorithms.</p> -->
 
 ## What is Plexiglass?
 
-Plexiglass is a Python research toolbox which supports adversarial testing in deep learning. It has two modules: LLMs and DNNs. For LLMs, plexiglass uses [litellm](https://github.com/BerriAI/litellm) under the hood. 
+Plexiglass is a Python toolbox which supports pentesting against adversarial attacks in machine learning. It has two modules: LLMs and DNNs. For LLMs, plexiglass uses [litellm](https://github.com/BerriAI/litellm) under the hood. 
 
 We are working tirelessly to include more frameworks and attack/ defense mechanisms for testing. Please read our docs for the latest updates.
+
+> [!IMPORTANT]
+> We are looking for contributors! Fork the repo to get started. Contribution guide is coming soon.
 
 > [!NOTE]
 > Plexiglass is open-source: Please leave a star to support the project! ⭐
@@ -22,7 +26,7 @@ Adversarial machine learning involves manipulating input data to deceive machine
 
 ## Installation
 
-The first stable release is version `1.2.0`.
+The first experimental release is version `0.0.1`.
 
 To download the package from PyPi:
 
@@ -35,7 +39,7 @@ To download the package from PyPi:
 We support a variety of LLMs using `litellm`. Alternatively, you can also test your own `huggingface` models.
 
 ```python
-from plexiglass.LLM import eval
+from plexiglass.LLM.evaluate import evaluate
 from plexiglass.model import Model
 
 import os
@@ -43,7 +47,7 @@ import os
 os.environ["OPENAI_API_KEY"] = "YOUR_OPENAI_API_KEY"
 model = Model("openai", "gpt-3.5-turbo")
 
-eval(model, metrics=["toxicity"], attacks=["prompt_injection", "gcg"])
+evaluate(model, metrics=["toxicity"], attacks=["prompt_injection", "gcg"])
 ```
 
 ### DNN Module: Simple Usage
@@ -51,7 +55,7 @@ eval(model, metrics=["toxicity"], attacks=["prompt_injection", "gcg"])
 Here is an example on how to test a model's robustness on FGSM attacks:
 
 ```python
-from plexiglass.DNN import eval
+from plexiglass.DNN.evaluate import evaluate
 from plexiglass.model import Model
 
 import os
@@ -60,7 +64,7 @@ import os
 
 model = Model("torch", your-model)
 
-eval(model, metrics=["accuracy"], attacks=["fgsm"])
+evaluate(model, metrics=["accuracy"], attacks=["fgsm"])
 ```
 
 ### Feature Request

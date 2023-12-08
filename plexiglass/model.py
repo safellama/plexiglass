@@ -21,6 +21,5 @@ class Model:
         elif self.model_type == "hf":
             user_msg = "\n\n".join([m["content"] for m in messages])
             response = self._hf_pipeline(user_msg)[0]["generated_text"]
-        else:
-            raise ValueError("Unsupported model type")
+
         return response
