@@ -5,11 +5,11 @@ Plexiglass</h1>
 <a href="https://badge.fury.io/py/plexiglass"><img src="https://badge.fury.io/py/plexiglass.svg" alt="PyPI version" height="18"></a>
 <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-apache2.0-yellow.svg" alt="license MIT" height="18"></a>
 </p>
-<p align="center">A security testing toolbox for adversarial attack on DNNs and LLMs.  </p>
+<p align="center">A security testing toolbox for adversarial attack on LLMs and DNNs.  </p>
 
 ## What is Plexiglass?
 
-Plexiglass is a Python research toolbox which supports adversarial testing in deep learning. It has two modules: DNN and LLM. For LLMs, plexiglass uses [litellm](https://github.com/BerriAI/litellm) under the hood. 
+Plexiglass is a Python research toolbox which supports adversarial testing in deep learning. It has two modules: LLMs and DNNs. For LLMs, plexiglass uses [litellm](https://github.com/BerriAI/litellm) under the hood. 
 
 We are working tirelessly to include more frameworks and attack/ defense mechanisms for testing. Please read our docs for the latest updates.
 
@@ -29,6 +29,22 @@ To download the package from PyPi:
 `pip install --upgrade plexiglass`
 
 ## Getting Started
+
+### LLM Module: Simple Usage
+
+We support a variety of LLMs using `litellm`. Alternatively, you can also test your own `huggingface` models.
+
+```python
+from plexiglass.LLM import eval
+from plexiglass.model import Model
+
+import os
+
+os.environ["OPENAI_API_KEY"] = "YOUR_OPENAI_API_KEY"
+model = Model("openai", "gpt-3.5-turbo")
+
+eval(model, metrics=["toxicity"], attacks=["prompt_injection", "gcg"])
+```
 
 ### DNN Module: Simple Usage
 
@@ -88,10 +104,6 @@ from plexiglass.defense import MesoInception
 
 model = MesoInception()
 ```
-
-### LLM Module: Simple Usage
-> [!NOTE] 
-> coming soon
 
 ### Feature Request
 To request new features, please submit an [issue](https://github.com/enochkan/plexiglass/issues)

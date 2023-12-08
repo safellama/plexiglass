@@ -16,7 +16,7 @@ class Model:
     def prompt(self, messages: list):
             if self.model_type != "hf":
                 response = completion(self.model_name, messages=messages)
-                return response
+                return response['choices'][0]["message"]["content"]
             else:
                # run_hf_inference()
                pass
