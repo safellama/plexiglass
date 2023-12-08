@@ -36,7 +36,7 @@ To download the package from PyPi:
 We support a variety of LLMs using `litellm`. Alternatively, you can also test your own `huggingface` models.
 
 ```python
-from plexiglass.LLM import eval
+from plexiglass.LLM.evaluate import evaluate
 from plexiglass.model import Model
 
 import os
@@ -44,7 +44,7 @@ import os
 os.environ["OPENAI_API_KEY"] = "YOUR_OPENAI_API_KEY"
 model = Model("openai", "gpt-3.5-turbo")
 
-eval(model, metrics=["toxicity"], attacks=["prompt_injection", "gcg"])
+evaluate(model, metrics=["toxicity"], attacks=["prompt_injection", "gcg"])
 ```
 
 ### DNN Module: Simple Usage
@@ -52,7 +52,7 @@ eval(model, metrics=["toxicity"], attacks=["prompt_injection", "gcg"])
 Here is an example on how to test a model's robustness on FGSM attacks:
 
 ```python
-from plexiglass.DNN import eval
+from plexiglass.DNN.evaluate import evaluate
 from plexiglass.model import Model
 
 import os
@@ -61,7 +61,7 @@ import os
 
 model = Model("torch", your-model)
 
-eval(model, metrics=["accuracy"], attacks=["fgsm"])
+evaluate(model, metrics=["accuracy"], attacks=["fgsm"])
 ```
 
 ### Feature Request
