@@ -105,3 +105,13 @@ make develop
 ```
 
 this will clean, build, and install the package locally for development purpose.
+
+### Contributors
+
+<!-- Copy-paste in your Readme.md file -->
+
+<a href = "https://github.com/Tanu-N-Prabhu/Python/graphs/contributors">
+  <img src = "https://contrib.rocks/image?repo = kortex-labs/plexiglass"/>
+</a>
+
+Made with [contributors-img](https://contrib.rocks).
