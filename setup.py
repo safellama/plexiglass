@@ -22,7 +22,7 @@ setup(
     description="A toolbox for adversarial attack research on DNNs and LLMs.",
     url="https://github.com/kortex-labs/plexiglass",
     author="Chi Nok Enoch Kan @chinokenochkan",
-    install_requires=["torch>=1.7.0", "litellm"],
+    install_requires=["torch>=1.7.0", "litellm", "detoxify"],
     include_package_data=True,
     packages=find_packages(),
 )
