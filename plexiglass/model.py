@@ -38,4 +38,4 @@ class Model:
 
         else:
             raise ValueError("Unsupported model type")
-        return response
+        return response['choices'][0]["message"]["content"]
