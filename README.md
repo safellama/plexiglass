@@ -110,8 +110,8 @@ this will clean, build, and install the package locally for development purpose.
 
 <!-- Copy-paste in your Readme.md file -->
 
-<a href = "https://github.com/Tanu-N-Prabhu/Python/graphs/contributors">
-  <img src = "https://contrib.rocks/image?repo = kortex-labs/plexiglass"/>
+<a href="https://github.com/kortex-labs/plexiglass/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=kortex-labs/plexiglass" />
 </a>
 
-Made with [contributors-img](https://contrib.rocks).
+Made with [contrib.rocks](https://contrib.rocks).
