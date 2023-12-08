@@ -23,4 +23,4 @@ class Model:
             response = self._hf_pipeline(messages)[0][0]["generated_text"]
         else:
             raise ValueError("Unsupported model type")
-        return response
+        return response['choices'][0]["message"]["content"]
