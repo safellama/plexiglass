@@ -14,6 +14,9 @@ Plexiglass is a Python toolbox which supports pentesting against adversarial att
 
 We are working tirelessly to include more frameworks and attack/ defense mechanisms for testing. Please read our docs for the latest updates.
 
+> [!IMPORTANT]
+> We are looking for contributors! Fork the repo to get started. Contribution guide is coming soon.
+
 > [!NOTE]
 > Plexiglass is open-source: Please leave a star to support the project! ⭐
 
