@@ -9,7 +9,9 @@ Plexiglass</h1>
 
 ## What is Plexiglass?
 
-Plexiglass is a Python research toolbox which supports adversarial testing in deep learning. It has two modules: LLMs and DNNs. For LLMs, plexiglass uses [litellm](https://github.com/BerriAI/litellm) under the hood. 
+Wondering if your AI model is safe enough to use? Plexiglass is your sparring partner for your model's defenses!
+
+Plexiglass is a Python research toolbox which supports testing against adversarial attacks in machine learning. It has two modules: LLMs and DNNs. For LLMs, plexiglass uses [litellm](https://github.com/BerriAI/litellm) under the hood. 
 
 We are working tirelessly to include more frameworks and attack/ defense mechanisms for testing. Please read our docs for the latest updates.
 
