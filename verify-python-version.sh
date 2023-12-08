@@ -1,6 +1,6 @@
 #!/bin/bash -eu
 
-RECOMMENDED_PYTHON_VERSION="3.8.6"
+RECOMMENDED_PYTHON_VERSION="3.9.10"
 INSTALL_MESSAGE="We recommend using pyenv to install Python 3 and pip.
 Follow the instructions on https://github.com/pyenv/pyenv-installer to install pyenv.
 Then install Python 3:
