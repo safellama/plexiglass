@@ -1,9 +1,9 @@
 from detoxify import Detoxify
 
 def measure_toxicity(prompt: str):
-    return Detoxify.predict(prompt)
+    return Detoxify('original').predict(prompt)
 
-def evaluate(prompt, metrics: list = ["toxicity"]):
+def evaluate(model, metrics: list = ["toxicity"], attacks: list = ["prompt_injection"]):
     results = []
     for metric in metrics:
         if metric == "toxicity":
