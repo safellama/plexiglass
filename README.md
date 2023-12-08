@@ -2,16 +2,15 @@
 <img src="assets/plexiglass.png" width="80" height="80"><br>
 Plexiglass</h1>
 <p align="center">
+Wondering if your AI model is safe enough to use? Plexiglass is your sparring partner for your model's defenses!<br><br>
 <a href="https://badge.fury.io/py/plexiglass"><img src="https://badge.fury.io/py/plexiglass.svg" alt="PyPI version" height="18"></a>
 <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-apache2.0-yellow.svg" alt="license MIT" height="18"></a>
 </p>
-<p align="center">A Python Machine Learning Security Toolbox for Adversarial Attacks. Works with LLMs, DNNs, and other machine learning algorithms.</p>
+<!-- <p align="center">A Python Machine Learning Security Toolbox for Adversarial Attacks. Works with LLMs, DNNs, and other machine learning algorithms.</p> -->
 
 ## What is Plexiglass?
 
-Wondering if your AI model is safe enough to use? Plexiglass is your sparring partner for your model's defenses!
-
-Plexiglass is a Python research toolbox which supports testing against adversarial attacks in machine learning. It has two modules: LLMs and DNNs. For LLMs, plexiglass uses [litellm](https://github.com/BerriAI/litellm) under the hood. 
+Plexiglass is a Python toolbox which supports testing against adversarial attacks in machine learning. It has two modules: LLMs and DNNs. For LLMs, plexiglass uses [litellm](https://github.com/BerriAI/litellm) under the hood. 
 
 We are working tirelessly to include more frameworks and attack/ defense mechanisms for testing. Please read our docs for the latest updates.
 
