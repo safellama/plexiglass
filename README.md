@@ -26,7 +26,7 @@ Adversarial machine learning involves manipulating input data to deceive machine
 
 ## Installation
 
-The first stable release is version `1.2.0`.
+The first stable release is version `0.0.1`.
 
 To download the package from PyPi:
 
