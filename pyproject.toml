@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "plexiglass"
+version = "0.0.1"  # Replace with the actual version
+description = "A Python Machine Learning Security Toolbox for Adversarial Attacks."
+readme = "README.md"
+authors = [{ name = "Chi Nok Enoch Kan", email = "your-email@example.com" }]  # Replace with actual email
+license = { file = "LICENSE" }  # If you have a LICENSE file
+classifiers = [
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    # Add other relevant classifiers
+]
+keywords = ["adversarial", "DNN", "LLM"]  # Add more relevant keywords
+dependencies = [
+    "torch >= 1.7.0",
+    "litellm",  # Specify version if needed
+    "detoxify",  # Specify version if needed
+    "transformers"
+]
+requires-python = ">=3.6"  # Specify your minimum Python version
+
+[project.urls]
+Homepage = "https://github.com/kortex-labs/plexiglass"
+Issues = "https://github.com/kortex-labs/plexiglass/issues"
+
+# Add any optional dependencies or scripts if you have them
+# [project.optional-dependencies]
+# dev = ["dependency1", "dependency2"]
+
+# [project.scripts]
+# script_name = "module:function"
