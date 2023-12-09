@@ -12,7 +12,7 @@ Wondering if your AI model is safe enough to use? Plexiglass is your sparring pa
 
 Plexiglass is a Python toolbox which supports pentesting against adversarial attacks in machine learning. It has two modules: LLMs and DNNs. For LLMs, plexiglass uses [litellm](https://github.com/BerriAI/litellm) under the hood. 
 
-We are working tirelessly to include more frameworks and attack/ defense mechanisms for testing. Please read our [docs](docs/) for the latest updates.
+We are working tirelessly to include more frameworks and attack/ defense mechanisms for testing. Please read our [docs](https://kortex-labs.github.io/plexiglass/build/html/index.html) for the latest updates.
 
 > [!IMPORTANT]
 > We are looking for contributors! Fork the repo to get started. Contribution guide is coming soon.
