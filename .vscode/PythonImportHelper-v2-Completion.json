@@ -94,6 +94,159 @@
         "documentation": {}
     },
     {
+        "label": "project",
+        "kind": 5,
+        "importPath": "docs.source.conf",
+        "description": "docs.source.conf",
+        "peekOfCode": "project = 'plexiglass'\ncopyright = '2023, kortex-labs'\nauthor = 'kortex-labs'\n# The full version, including alpha/beta/rc tags\nrelease = '0.0.1'\n# -- General configuration ---------------------------------------------------\nextensions = [\n    \"sphinx.ext.autodoc\",\n    \"sphinx.ext.autosummary\",\n    \"sphinx.ext.intersphinx\",",
+        "detail": "docs.source.conf",
+        "documentation": {}
+    },
+    {
+        "label": "copyright",
+        "kind": 5,
+        "importPath": "docs.source.conf",
+        "description": "docs.source.conf",
+        "peekOfCode": "copyright = '2023, kortex-labs'\nauthor = 'kortex-labs'\n# The full version, including alpha/beta/rc tags\nrelease = '0.0.1'\n# -- General configuration ---------------------------------------------------\nextensions = [\n    \"sphinx.ext.autodoc\",\n    \"sphinx.ext.autosummary\",\n    \"sphinx.ext.intersphinx\",\n    \"sphinx.ext.napoleon\",",
+        "detail": "docs.source.conf",
+        "documentation": {}
+    },
+    {
+        "label": "author",
+        "kind": 5,
+        "importPath": "docs.source.conf",
+        "description": "docs.source.conf",
+        "peekOfCode": "author = 'kortex-labs'\n# The full version, including alpha/beta/rc tags\nrelease = '0.0.1'\n# -- General configuration ---------------------------------------------------\nextensions = [\n    \"sphinx.ext.autodoc\",\n    \"sphinx.ext.autosummary\",\n    \"sphinx.ext.intersphinx\",\n    \"sphinx.ext.napoleon\",\n]",
+        "detail": "docs.source.conf",
+        "documentation": {}
+    },
+    {
+        "label": "release",
+        "kind": 5,
+        "importPath": "docs.source.conf",
+        "description": "docs.source.conf",
+        "peekOfCode": "release = '0.0.1'\n# -- General configuration ---------------------------------------------------\nextensions = [\n    \"sphinx.ext.autodoc\",\n    \"sphinx.ext.autosummary\",\n    \"sphinx.ext.intersphinx\",\n    \"sphinx.ext.napoleon\",\n]\npython_use_unqualified_type_names = True\nautosummary_generate = True",
+        "detail": "docs.source.conf",
+        "documentation": {}
+    },
+    {
+        "label": "extensions",
+        "kind": 5,
+        "importPath": "docs.source.conf",
+        "description": "docs.source.conf",
+        "peekOfCode": "extensions = [\n    \"sphinx.ext.autodoc\",\n    \"sphinx.ext.autosummary\",\n    \"sphinx.ext.intersphinx\",\n    \"sphinx.ext.napoleon\",\n]\npython_use_unqualified_type_names = True\nautosummary_generate = True\nintersphinx_mapping = {\n    \"https://docs.python.org/3\": None,",
+        "detail": "docs.source.conf",
+        "documentation": {}
+    },
+    {
+        "label": "python_use_unqualified_type_names",
+        "kind": 5,
+        "importPath": "docs.source.conf",
+        "description": "docs.source.conf",
+        "peekOfCode": "python_use_unqualified_type_names = True\nautosummary_generate = True\nintersphinx_mapping = {\n    \"https://docs.python.org/3\": None,\n    \"https://numpy.org/doc/stable/\": None,\n}\ntemplates_path = [\"_templates\"]\nhtml_static_path = [\"_static\"]\nsource_suffix = \".rst\"\nmaster_doc = \"index\"",
+        "detail": "docs.source.conf",
+        "documentation": {}
+    },
+    {
+        "label": "autosummary_generate",
+        "kind": 5,
+        "importPath": "docs.source.conf",
+        "description": "docs.source.conf",
+        "peekOfCode": "autosummary_generate = True\nintersphinx_mapping = {\n    \"https://docs.python.org/3\": None,\n    \"https://numpy.org/doc/stable/\": None,\n}\ntemplates_path = [\"_templates\"]\nhtml_static_path = [\"_static\"]\nsource_suffix = \".rst\"\nmaster_doc = \"index\"\nhighlight_language = \"python\"",
+        "detail": "docs.source.conf",
+        "documentation": {}
+    },
+    {
+        "label": "intersphinx_mapping",
+        "kind": 5,
+        "importPath": "docs.source.conf",
+        "description": "docs.source.conf",
+        "peekOfCode": "intersphinx_mapping = {\n    \"https://docs.python.org/3\": None,\n    \"https://numpy.org/doc/stable/\": None,\n}\ntemplates_path = [\"_templates\"]\nhtml_static_path = [\"_static\"]\nsource_suffix = \".rst\"\nmaster_doc = \"index\"\nhighlight_language = \"python\"\npygments_style = \"sphinx\"",
+        "detail": "docs.source.conf",
+        "documentation": {}
+    },
+    {
+        "label": "templates_path",
+        "kind": 5,
+        "importPath": "docs.source.conf",
+        "description": "docs.source.conf",
+        "peekOfCode": "templates_path = [\"_templates\"]\nhtml_static_path = [\"_static\"]\nsource_suffix = \".rst\"\nmaster_doc = \"index\"\nhighlight_language = \"python\"\npygments_style = \"sphinx\"\n# -- Options for HTML output -------------------------------------------------\nhtml_theme = \"sphinx_book_theme\"\nhtml_theme_options = {\n    \"show_toc_level\": 2,",
+        "detail": "docs.source.conf",
+        "documentation": {}
+    },
+    {
+        "label": "html_static_path",
+        "kind": 5,
+        "importPath": "docs.source.conf",
+        "description": "docs.source.conf",
+        "peekOfCode": "html_static_path = [\"_static\"]\nsource_suffix = \".rst\"\nmaster_doc = \"index\"\nhighlight_language = \"python\"\npygments_style = \"sphinx\"\n# -- Options for HTML output -------------------------------------------------\nhtml_theme = \"sphinx_book_theme\"\nhtml_theme_options = {\n    \"show_toc_level\": 2,\n    \"repository_url\": \"https://github.com/kortex-labs/plexiglass\",",
+        "detail": "docs.source.conf",
+        "documentation": {}
+    },
+    {
+        "label": "source_suffix",
+        "kind": 5,
+        "importPath": "docs.source.conf",
+        "description": "docs.source.conf",
+        "peekOfCode": "source_suffix = \".rst\"\nmaster_doc = \"index\"\nhighlight_language = \"python\"\npygments_style = \"sphinx\"\n# -- Options for HTML output -------------------------------------------------\nhtml_theme = \"sphinx_book_theme\"\nhtml_theme_options = {\n    \"show_toc_level\": 2,\n    \"repository_url\": \"https://github.com/kortex-labs/plexiglass\",\n    \"use_repository_button\": True,",
+        "detail": "docs.source.conf",
+        "documentation": {}
+    },
+    {
+        "label": "master_doc",
+        "kind": 5,
+        "importPath": "docs.source.conf",
+        "description": "docs.source.conf",
+        "peekOfCode": "master_doc = \"index\"\nhighlight_language = \"python\"\npygments_style = \"sphinx\"\n# -- Options for HTML output -------------------------------------------------\nhtml_theme = \"sphinx_book_theme\"\nhtml_theme_options = {\n    \"show_toc_level\": 2,\n    \"repository_url\": \"https://github.com/kortex-labs/plexiglass\",\n    \"use_repository_button\": True,\n    \"navigation_with_keys\": False,",
+        "detail": "docs.source.conf",
+        "documentation": {}
+    },
+    {
+        "label": "highlight_language",
+        "kind": 5,
+        "importPath": "docs.source.conf",
+        "description": "docs.source.conf",
+        "peekOfCode": "highlight_language = \"python\"\npygments_style = \"sphinx\"\n# -- Options for HTML output -------------------------------------------------\nhtml_theme = \"sphinx_book_theme\"\nhtml_theme_options = {\n    \"show_toc_level\": 2,\n    \"repository_url\": \"https://github.com/kortex-labs/plexiglass\",\n    \"use_repository_button\": True,\n    \"navigation_with_keys\": False,\n}",
+        "detail": "docs.source.conf",
+        "documentation": {}
+    },
+    {
+        "label": "pygments_style",
+        "kind": 5,
+        "importPath": "docs.source.conf",
+        "description": "docs.source.conf",
+        "peekOfCode": "pygments_style = \"sphinx\"\n# -- Options for HTML output -------------------------------------------------\nhtml_theme = \"sphinx_book_theme\"\nhtml_theme_options = {\n    \"show_toc_level\": 2,\n    \"repository_url\": \"https://github.com/kortex-labs/plexiglass\",\n    \"use_repository_button\": True,\n    \"navigation_with_keys\": False,\n}\n# -- Options for HTMLHelp output ---------------------------------------------",
+        "detail": "docs.source.conf",
+        "documentation": {}
+    },
+    {
+        "label": "html_theme",
+        "kind": 5,
+        "importPath": "docs.source.conf",
+        "description": "docs.source.conf",
+        "peekOfCode": "html_theme = \"sphinx_book_theme\"\nhtml_theme_options = {\n    \"show_toc_level\": 2,\n    \"repository_url\": \"https://github.com/kortex-labs/plexiglass\",\n    \"use_repository_button\": True,\n    \"navigation_with_keys\": False,\n}\n# -- Options for HTMLHelp output ---------------------------------------------\nhtmlhelp_basename = \"mlx_doc\"",
+        "detail": "docs.source.conf",
+        "documentation": {}
+    },
+    {
+        "label": "html_theme_options",
+        "kind": 5,
+        "importPath": "docs.source.conf",
+        "description": "docs.source.conf",
+        "peekOfCode": "html_theme_options = {\n    \"show_toc_level\": 2,\n    \"repository_url\": \"https://github.com/kortex-labs/plexiglass\",\n    \"use_repository_button\": True,\n    \"navigation_with_keys\": False,\n}\n# -- Options for HTMLHelp output ---------------------------------------------\nhtmlhelp_basename = \"mlx_doc\"",
+        "detail": "docs.source.conf",
+        "documentation": {}
+    },
+    {
+        "label": "htmlhelp_basename",
+        "kind": 5,
+        "importPath": "docs.source.conf",
+        "description": "docs.source.conf",
+        "peekOfCode": "htmlhelp_basename = \"mlx_doc\"",
+        "detail": "docs.source.conf",
+        "documentation": {}
+    },
+    {
         "label": "DeepFool",
         "kind": 6,
         "importPath": "plexiglass.DNN.attacks.deepfool",
