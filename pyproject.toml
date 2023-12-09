@@ -19,6 +19,7 @@ dependencies = [
     "torch >= 1.7.0",
     "litellm",  # Specify version if needed
     "detoxify",  # Specify version if needed
+    "transformers"
 ]
 requires-python = ">=3.6"  # Specify your minimum Python version
 

@@ -98,7 +98,7 @@
         "kind": 5,
         "importPath": "docs.conf",
         "description": "docs.conf",
-        "peekOfCode": "project = 'plexiglass'\ncopyright = '2023, kortex-labs'\nauthor = 'kortex-labs'\nrelease = '0.0.1'\n# -- General configuration ---------------------------------------------------\n# https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration\nextensions = []\ntemplates_path = ['_templates']\nexclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']\n# -- Options for HTML output -------------------------------------------------",
+        "peekOfCode": "project = 'plexiglass'\ncopyright = '2023, kortex-labs'\nauthor = 'kortex-labs'\nrelease = '0.0.1'\n# -- General configuration ---------------------------------------------------\n# https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration\nextensions = ['sphinx.ext.todo', 'sphinx.ext.viewcode', 'sphinx.ext.autodoc']\ntemplates_path = ['_templates']\nexclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']\n# -- Options for HTML output -------------------------------------------------",
         "detail": "docs.conf",
         "documentation": {}
     },
@@ -107,7 +107,7 @@
         "kind": 5,
         "importPath": "docs.conf",
         "description": "docs.conf",
-        "peekOfCode": "copyright = '2023, kortex-labs'\nauthor = 'kortex-labs'\nrelease = '0.0.1'\n# -- General configuration ---------------------------------------------------\n# https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration\nextensions = []\ntemplates_path = ['_templates']\nexclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']\n# -- Options for HTML output -------------------------------------------------\n# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output",
+        "peekOfCode": "copyright = '2023, kortex-labs'\nauthor = 'kortex-labs'\nrelease = '0.0.1'\n# -- General configuration ---------------------------------------------------\n# https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration\nextensions = ['sphinx.ext.todo', 'sphinx.ext.viewcode', 'sphinx.ext.autodoc']\ntemplates_path = ['_templates']\nexclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']\n# -- Options for HTML output -------------------------------------------------\n# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output",
         "detail": "docs.conf",
         "documentation": {}
     },
@@ -116,7 +116,7 @@
         "kind": 5,
         "importPath": "docs.conf",
         "description": "docs.conf",
-        "peekOfCode": "author = 'kortex-labs'\nrelease = '0.0.1'\n# -- General configuration ---------------------------------------------------\n# https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration\nextensions = []\ntemplates_path = ['_templates']\nexclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']\n# -- Options for HTML output -------------------------------------------------\n# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output\nhtml_theme = 'alabaster'",
+        "peekOfCode": "author = 'kortex-labs'\nrelease = '0.0.1'\n# -- General configuration ---------------------------------------------------\n# https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration\nextensions = ['sphinx.ext.todo', 'sphinx.ext.viewcode', 'sphinx.ext.autodoc']\ntemplates_path = ['_templates']\nexclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']\n# -- Options for HTML output -------------------------------------------------\n# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output\nhtml_theme = 'pydata_sphinx_theme'",
         "detail": "docs.conf",
         "documentation": {}
     },
@@ -125,7 +125,7 @@
         "kind": 5,
         "importPath": "docs.conf",
         "description": "docs.conf",
-        "peekOfCode": "release = '0.0.1'\n# -- General configuration ---------------------------------------------------\n# https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration\nextensions = []\ntemplates_path = ['_templates']\nexclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']\n# -- Options for HTML output -------------------------------------------------\n# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output\nhtml_theme = 'alabaster'\nhtml_static_path = ['_static']",
+        "peekOfCode": "release = '0.0.1'\n# -- General configuration ---------------------------------------------------\n# https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration\nextensions = ['sphinx.ext.todo', 'sphinx.ext.viewcode', 'sphinx.ext.autodoc']\ntemplates_path = ['_templates']\nexclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']\n# -- Options for HTML output -------------------------------------------------\n# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output\nhtml_theme = 'pydata_sphinx_theme'\nhtml_static_path = ['_static']",
         "detail": "docs.conf",
         "documentation": {}
     },
@@ -134,7 +134,7 @@
         "kind": 5,
         "importPath": "docs.conf",
         "description": "docs.conf",
-        "peekOfCode": "extensions = []\ntemplates_path = ['_templates']\nexclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']\n# -- Options for HTML output -------------------------------------------------\n# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output\nhtml_theme = 'alabaster'\nhtml_static_path = ['_static']",
+        "peekOfCode": "extensions = ['sphinx.ext.todo', 'sphinx.ext.viewcode', 'sphinx.ext.autodoc']\ntemplates_path = ['_templates']\nexclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']\n# -- Options for HTML output -------------------------------------------------\n# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output\nhtml_theme = 'pydata_sphinx_theme'\nhtml_static_path = ['_static']",
         "detail": "docs.conf",
         "documentation": {}
     },
@@ -143,7 +143,7 @@
         "kind": 5,
         "importPath": "docs.conf",
         "description": "docs.conf",
-        "peekOfCode": "templates_path = ['_templates']\nexclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']\n# -- Options for HTML output -------------------------------------------------\n# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output\nhtml_theme = 'alabaster'\nhtml_static_path = ['_static']",
+        "peekOfCode": "templates_path = ['_templates']\nexclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']\n# -- Options for HTML output -------------------------------------------------\n# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output\nhtml_theme = 'pydata_sphinx_theme'\nhtml_static_path = ['_static']",
         "detail": "docs.conf",
         "documentation": {}
     },
@@ -152,7 +152,7 @@
         "kind": 5,
         "importPath": "docs.conf",
         "description": "docs.conf",
-        "peekOfCode": "exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']\n# -- Options for HTML output -------------------------------------------------\n# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output\nhtml_theme = 'alabaster'\nhtml_static_path = ['_static']",
+        "peekOfCode": "exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']\n# -- Options for HTML output -------------------------------------------------\n# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output\nhtml_theme = 'pydata_sphinx_theme'\nhtml_static_path = ['_static']",
         "detail": "docs.conf",
         "documentation": {}
     },
@@ -161,7 +161,7 @@
         "kind": 5,
         "importPath": "docs.conf",
         "description": "docs.conf",
-        "peekOfCode": "html_theme = 'alabaster'\nhtml_static_path = ['_static']",
+        "peekOfCode": "html_theme = 'pydata_sphinx_theme'\nhtml_static_path = ['_static']",
         "detail": "docs.conf",
         "documentation": {}
     },
