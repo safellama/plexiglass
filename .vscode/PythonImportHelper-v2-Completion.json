@@ -1,0 +1,285 @@
+[
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "torch",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "torch",
+        "description": "torch",
+        "detail": "torch",
+        "documentation": {}
+    },
+    {
+        "label": "zero_gradients",
+        "importPath": "torch.autograd.gradcheck",
+        "description": "torch.autograd.gradcheck",
+        "isExtraImport": true,
+        "detail": "torch.autograd.gradcheck",
+        "documentation": {}
+    },
+    {
+        "label": "matplotlib.pyplot",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib.pyplot",
+        "description": "matplotlib.pyplot",
+        "detail": "matplotlib.pyplot",
+        "documentation": {}
+    },
+    {
+        "label": "torch.nn",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "torch.nn",
+        "description": "torch.nn",
+        "detail": "torch.nn",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "Detoxify",
+        "importPath": "detoxify",
+        "description": "detoxify",
+        "isExtraImport": true,
+        "detail": "detoxify",
+        "documentation": {}
+    },
+    {
+        "label": "basic_injection",
+        "importPath": "plexiglass.LLM.attacks.injection",
+        "description": "plexiglass.LLM.attacks.injection",
+        "isExtraImport": true,
+        "detail": "plexiglass.LLM.attacks.injection",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "completion",
+        "importPath": "litellm",
+        "description": "litellm",
+        "isExtraImport": true,
+        "detail": "litellm",
+        "documentation": {}
+    },
+    {
+        "label": "pipeline",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "project",
+        "kind": 5,
+        "importPath": "docs.conf",
+        "description": "docs.conf",
+        "peekOfCode": "project = 'plexiglass'\ncopyright = '2023, kortex-labs'\nauthor = 'kortex-labs'\nrelease = '0.0.1'\n# -- General configuration ---------------------------------------------------\n# https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration\nextensions = []\ntemplates_path = ['_templates']\nexclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']\n# -- Options for HTML output -------------------------------------------------",
+        "detail": "docs.conf",
+        "documentation": {}
+    },
+    {
+        "label": "copyright",
+        "kind": 5,
+        "importPath": "docs.conf",
+        "description": "docs.conf",
+        "peekOfCode": "copyright = '2023, kortex-labs'\nauthor = 'kortex-labs'\nrelease = '0.0.1'\n# -- General configuration ---------------------------------------------------\n# https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration\nextensions = []\ntemplates_path = ['_templates']\nexclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']\n# -- Options for HTML output -------------------------------------------------\n# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output",
+        "detail": "docs.conf",
+        "documentation": {}
+    },
+    {
+        "label": "author",
+        "kind": 5,
+        "importPath": "docs.conf",
+        "description": "docs.conf",
+        "peekOfCode": "author = 'kortex-labs'\nrelease = '0.0.1'\n# -- General configuration ---------------------------------------------------\n# https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration\nextensions = []\ntemplates_path = ['_templates']\nexclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']\n# -- Options for HTML output -------------------------------------------------\n# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output\nhtml_theme = 'alabaster'",
+        "detail": "docs.conf",
+        "documentation": {}
+    },
+    {
+        "label": "release",
+        "kind": 5,
+        "importPath": "docs.conf",
+        "description": "docs.conf",
+        "peekOfCode": "release = '0.0.1'\n# -- General configuration ---------------------------------------------------\n# https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration\nextensions = []\ntemplates_path = ['_templates']\nexclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']\n# -- Options for HTML output -------------------------------------------------\n# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output\nhtml_theme = 'alabaster'\nhtml_static_path = ['_static']",
+        "detail": "docs.conf",
+        "documentation": {}
+    },
+    {
+        "label": "extensions",
+        "kind": 5,
+        "importPath": "docs.conf",
+        "description": "docs.conf",
+        "peekOfCode": "extensions = []\ntemplates_path = ['_templates']\nexclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']\n# -- Options for HTML output -------------------------------------------------\n# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output\nhtml_theme = 'alabaster'\nhtml_static_path = ['_static']",
+        "detail": "docs.conf",
+        "documentation": {}
+    },
+    {
+        "label": "templates_path",
+        "kind": 5,
+        "importPath": "docs.conf",
+        "description": "docs.conf",
+        "peekOfCode": "templates_path = ['_templates']\nexclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']\n# -- Options for HTML output -------------------------------------------------\n# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output\nhtml_theme = 'alabaster'\nhtml_static_path = ['_static']",
+        "detail": "docs.conf",
+        "documentation": {}
+    },
+    {
+        "label": "exclude_patterns",
+        "kind": 5,
+        "importPath": "docs.conf",
+        "description": "docs.conf",
+        "peekOfCode": "exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']\n# -- Options for HTML output -------------------------------------------------\n# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output\nhtml_theme = 'alabaster'\nhtml_static_path = ['_static']",
+        "detail": "docs.conf",
+        "documentation": {}
+    },
+    {
+        "label": "html_theme",
+        "kind": 5,
+        "importPath": "docs.conf",
+        "description": "docs.conf",
+        "peekOfCode": "html_theme = 'alabaster'\nhtml_static_path = ['_static']",
+        "detail": "docs.conf",
+        "documentation": {}
+    },
+    {
+        "label": "html_static_path",
+        "kind": 5,
+        "importPath": "docs.conf",
+        "description": "docs.conf",
+        "peekOfCode": "html_static_path = ['_static']",
+        "detail": "docs.conf",
+        "documentation": {}
+    },
+    {
+        "label": "DeepFool",
+        "kind": 6,
+        "importPath": "plexiglass.DNN.attacks.deepfool",
+        "description": "plexiglass.DNN.attacks.deepfool",
+        "peekOfCode": "class DeepFool:\n    # max_iter=50, clip_max=0.5, clip_min=-0.5\n    def __init__(self, max_iter, clip_max, clip_min):\n        self.max_iter = max_iter\n        self.clip_max = clip_max\n        self.clip_min = clip_min\n    def __call__(self, model, x, y):\n        nx = torch.unsqueeze(x, 0)\n        nx.requires_grad_()\n        eta = torch.zeros(nx.shape)",
+        "detail": "plexiglass.DNN.attacks.deepfool",
+        "documentation": {}
+    },
+    {
+        "label": "FGSM",
+        "kind": 6,
+        "importPath": "plexiglass.DNN.attacks.fgsm",
+        "description": "plexiglass.DNN.attacks.fgsm",
+        "peekOfCode": "class FGSM:\n    def __init__(self, model, loss, device):\n        self.device = device\n        self.model = model\n        self.loss = loss\n    def __call__(self, images, labels, eps):\n        images = images.to(self.device)\n        labels = labels.to(self.device)\n        images.requires_grad = True\n        outputs = self.model(images)",
+        "detail": "plexiglass.DNN.attacks.fgsm",
+        "documentation": {}
+    },
+    {
+        "label": "compute_jacobian",
+        "kind": 2,
+        "importPath": "plexiglass.DNN.attacks.jsma",
+        "description": "plexiglass.DNN.attacks.jsma",
+        "peekOfCode": "def compute_jacobian(inputs, output):\n    assert inputs.requires_grad\n    num_classes = output.size()[1]\n    jacobian = torch.zeros(num_classes, *inputs.size())\n    grad_output = torch.zeros(*output.size())\n    if inputs.is_cuda:\n        grad_output = grad_output.cuda()\n        jacobian = jacobian.cuda()\n    for i in range(num_classes):\n        zero_gradients(inputs)",
+        "detail": "plexiglass.DNN.attacks.jsma",
+        "documentation": {}
+    },
+    {
+        "label": "PGD",
+        "kind": 6,
+        "importPath": "plexiglass.DNN.attacks.pgd",
+        "description": "plexiglass.DNN.attacks.pgd",
+        "peekOfCode": "class PGD:\n    def __init__(self, model, device):\n        self.device = device\n        self.model = model\n        self.loss = nn.CrossEntropyLoss()\n    def __call__(self, images, labels, eps=0.3, alpha=2 / 255, iterations=100):\n        images = images.to(device)\n        labels = labels.to(device)\n        ori_images = images.data\n        for i in range(iterations):",
+        "detail": "plexiglass.DNN.attacks.pgd",
+        "documentation": {}
+    },
+    {
+        "label": "test_robustness",
+        "kind": 2,
+        "importPath": "plexiglass.DNN.attacks.testing",
+        "description": "plexiglass.DNN.attacks.testing",
+        "peekOfCode": "def test_robustness(attack, dataloader, device, eps=None, plot=False):\n    if plot and type(attack) != type(FGSM(model=None, loss=None, device=None)):\n        print(\"Please set plot to False when attack is not FGSM\")\n        return\n    total, correct = 0, 0\n    # normal run\n    for images, labels in dataloader:\n        outputs = attack.model(images.to(device))\n        labels = labels.to(device)\n        _, pre = torch.max(outputs.data, 1)",
+        "detail": "plexiglass.DNN.attacks.testing",
+        "documentation": {}
+    },
+    {
+        "label": "MesoNet",
+        "kind": 6,
+        "importPath": "plexiglass.DNN.defense.mesonet",
+        "description": "plexiglass.DNN.defense.mesonet",
+        "peekOfCode": "class MesoNet(nn.Module):\n    def __init__(self, num_classes=2):\n        super(MesoNet, self).__init__()\n        self.num_classes = num_classes\n        self.conv1 = nn.Conv2d(3, 8, 3, padding=1, bias=False)\n        self.bn1 = nn.BatchNorm2d(8)\n        self.relu = nn.ReLU(inplace=True)\n        self.leakyrelu = nn.LeakyReLU(0.1)\n        self.conv2 = nn.Conv2d(8, 8, 5, padding=2, bias=False)\n        self.bn2 = nn.BatchNorm2d(16)",
+        "detail": "plexiglass.DNN.defense.mesonet",
+        "documentation": {}
+    },
+    {
+        "label": "MesoInception",
+        "kind": 6,
+        "importPath": "plexiglass.DNN.defense.mesonet",
+        "description": "plexiglass.DNN.defense.mesonet",
+        "peekOfCode": "class MesoInception(nn.Module):\n    def __init__(self, num_classes=2):\n        super(MesoInception, self).__init__()\n        self.num_classes = num_classes\n        self.Incption1_conv1 = nn.Conv2d(3, 1, 1, padding=0, bias=False)\n        self.Incption1_conv2_1 = nn.Conv2d(3, 4, 1, padding=0, bias=False)\n        self.Incption1_conv2_2 = nn.Conv2d(4, 4, 3, padding=1, bias=False)\n        self.Incption1_conv3_1 = nn.Conv2d(3, 4, 1, padding=0, bias=False)\n        self.Incption1_conv3_2 = nn.Conv2d(4, 4, 3, padding=2, dilation=2, bias=False)\n        self.Incption1_conv4_1 = nn.Conv2d(3, 2, 1, padding=0, bias=False)",
+        "detail": "plexiglass.DNN.defense.mesonet",
+        "documentation": {}
+    },
+    {
+        "label": "basic_injection",
+        "kind": 2,
+        "importPath": "plexiglass.LLM.attacks.injection.injection",
+        "description": "plexiglass.LLM.attacks.injection.injection",
+        "peekOfCode": "def basic_injection(model, prompts_path = \"./plexiglass/LLM/attacks/injection/adversarial_prompts.jsonl\"):\n    try:\n        with open(prompts_path, 'r') as jsonl_file:\n            results, prompts_used = [], []\n            for line in list(jsonl_file):\n                # Parse each line as a JSON object\n                prompt = json.loads(line.strip())[\"prompt\"]\n                prompts_used.append(prompt)\n                results.append(model.prompt(prompt))\n            return results, prompts_used",
+        "detail": "plexiglass.LLM.attacks.injection.injection",
+        "documentation": {}
+    },
+    {
+        "label": "measure_toxicity",
+        "kind": 2,
+        "importPath": "plexiglass.LLM.evaluate",
+        "description": "plexiglass.LLM.evaluate",
+        "peekOfCode": "def measure_toxicity(prompt: str):\n    return Detoxify('original').predict(prompt)\ndef evaluate(model, metrics: list = [\"toxicity\"], attacks: list = [\"prompt_injection\"]):\n    # responses = []\n    for attack in attacks:\n        if attack == \"prompt_injection\":\n            responses, prompts_used = basic_injection(model)\n    results = pd.DataFrame({\"queries\": prompts_used, \"responses\": responses})\n    results[\"success\"] = (results[\"queries\"] == results[\"responses\"])\n    return results",
+        "detail": "plexiglass.LLM.evaluate",
+        "documentation": {}
+    },
+    {
+        "label": "evaluate",
+        "kind": 2,
+        "importPath": "plexiglass.LLM.evaluate",
+        "description": "plexiglass.LLM.evaluate",
+        "peekOfCode": "def evaluate(model, metrics: list = [\"toxicity\"], attacks: list = [\"prompt_injection\"]):\n    # responses = []\n    for attack in attacks:\n        if attack == \"prompt_injection\":\n            responses, prompts_used = basic_injection(model)\n    results = pd.DataFrame({\"queries\": prompts_used, \"responses\": responses})\n    results[\"success\"] = (results[\"queries\"] == results[\"responses\"])\n    return results\nif __name__ == \"__main__\":\n    evaluate()",
+        "detail": "plexiglass.LLM.evaluate",
+        "documentation": {}
+    },
+    {
+        "label": "Model",
+        "kind": 6,
+        "importPath": "plexiglass.model",
+        "description": "plexiglass.model",
+        "peekOfCode": "class Model:\n    def __init__(self, model_type: str, model_name: str):\n        if model_type in supported_list:\n            self.model_type = model_type\n            self.model_name = model_name\n            if self.model_type == \"hf\":\n                # huggingface model\n                self._hf_pipeline = pipeline(\"text-generation\", model=model_name, device_map=\"auto\")\n        else:\n            raise ValueError(\"Unsupported model type\")",
+        "detail": "plexiglass.model",
+        "documentation": {}
+    },
+    {
+        "label": "supported_list",
+        "kind": 5,
+        "importPath": "plexiglass.model",
+        "description": "plexiglass.model",
+        "peekOfCode": "supported_list = [\"openai\", \"hf\"]\nclass Model:\n    def __init__(self, model_type: str, model_name: str):\n        if model_type in supported_list:\n            self.model_type = model_type\n            self.model_name = model_name\n            if self.model_type == \"hf\":\n                # huggingface model\n                self._hf_pipeline = pipeline(\"text-generation\", model=model_name, device_map=\"auto\")\n        else:",
+        "detail": "plexiglass.model",
+        "documentation": {}
+    }
+]
