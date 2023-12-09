@@ -17,7 +17,11 @@ class Model:
 
     def prompt(self, messages: list) -> str:
         if self.model_type != "hf":
-            response = completion(self.model_name, messages=messages)["choices"][0]["message"]["content"]
+            # cast messages 
+            fmt = []
+            for message in messages:
+                fmt.append({"content": message,"role": "user"})
+            response = completion(self.model_name, messages=fmt)["choices"][0]["message"]["content"]
         elif self.model_type == "hf":
             user_msg = "\n\n".join([m["content"] for m in messages])
             response = self._hf_pipeline(user_msg)[0]["generated_text"]
