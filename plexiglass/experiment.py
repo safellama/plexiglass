@@ -29,6 +29,3 @@ class Experiment:
                 print("Bot:", response["response"])
         except KeyboardInterrupt:
             print("\nConversation ended.")
-
-if __name__ == "__main__":
-    Experiment("openai", "gpt-3.5-turbo", "llm-chat-testing")

@@ -20,13 +20,18 @@ dependencies = [
     "litellm",  # Specify version if needed
     "detoxify",  # Specify version if needed
     "transformers",
-    "accelerate"
+    "accelerate",
+    "typer",
+    "inquererpy"
 ]
 requires-python = ">=3.6"  # Specify your minimum Python version
 
 [project.urls]
 Homepage = "https://github.com/kortex-labs/plexiglass"
 Issues = "https://github.com/kortex-labs/plexiglass/issues"
+
+[project.scripts]
+plx-cli = "my_package.my_module:main_cli"
 
 # Add any optional dependencies or scripts if you have them
 # [project.optional-dependencies]
