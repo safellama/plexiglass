@@ -1,29 +1,14 @@
-from litellm import completion
-from transformers import pipeline
+from langchain.chat_models import ChatLiteLLM
 
-supported_list = ["openai", "hf"]
+llm_supported_list = ["openai"]
+dnn_supported_list = []
 
+# available mode: ["llm-benchmarking", "llm-chat-testing", "dnn-testing"]
 
 class Model:
     def __init__(self, model_type: str, model_name: str):
-        if model_type in supported_list:
-            self.model_type = model_type
-            self.model_name = model_name
-            if self.model_type == "hf":
-                # huggingface model
-                self._hf_pipeline = pipeline("text-generation", model=model_name, device_map="auto")
+        ## use litellm chat_model for llm testing
+        if model_type in llm_supported_list and model_type not in dnn_supported_list:
+            self.model = ChatLiteLLM(model=model_name)
         else:
-            raise ValueError("Unsupported model type")
-
-    def prompt(self, messages: list) -> str:
-        if self.model_type != "hf":
-            # cast messages 
-            fmt = []
-            for message in messages:
-                fmt.append({"content": message,"role": "user"})
-            response = completion(self.model_name, messages=fmt)["choices"][0]["message"]["content"]
-        elif self.model_type == "hf":
-            user_msg = "\n\n".join([m["content"] for m in messages])
-            response = self._hf_pipeline(user_msg)[0]["generated_text"]
-
-        return response
+            raise NotImplementedError("Unsupported model type")
