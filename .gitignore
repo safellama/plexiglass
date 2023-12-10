@@ -8,7 +8,9 @@ __pycache__/
 *.DS_Store
 # Distribution / packaging
 .Python
-build/
+# build/
+### VisualStudioCode ###
+.vscode/**/*
 develop-eggs/
 dist/
 downloads/
