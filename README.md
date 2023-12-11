@@ -35,10 +35,18 @@ To download the package from PyPi:
 
 `pip install --upgrade plexiglass`
 
-### Feature Request
+## Modes
+
+Plexiglass has two modes: `chat` and `benchmark`.
+
+`chat` allows you to converse with the LLM and measure predefined metrics, such as toxicity, from its responses.
+
+`benchmark` runs tests to identify and assess various vulnerabilities in the LLM.
+
+## Feature Request
 To request new features, please submit an [issue](https://github.com/enochkan/plexiglass/issues)
 
-### Local Development
+## Local Development
 
 To get started
 
@@ -48,7 +56,7 @@ make develop
 
 this will clean, build, and install the package locally for development purpose.
 
-### Contributors
+## Contributors
 
 <!-- Copy-paste in your Readme.md file -->
 

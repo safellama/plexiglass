@@ -2,17 +2,17 @@ from .model import Model
 from langchain.chains import ConversationChain
 from langchain.chains.conversation.memory import ConversationBufferWindowMemory
 from langchain.chat_models import ChatLiteLLM
-from .LLM.evaluate import measure_toxicity
+from .toolkit.evaluate import measure_toxicity
 import sys
 import pandas as pd
 
 class Experiment:
-    def __init__(self, model_type: str, model_name: str, mode: str = "llm-chat-testing"):
+    def __init__(self, model_type: str, model_name: str, mode: str = "chat"):
         self.model = Model(model_type, model_name).model
         self.conversation_history = []
         
         ## define mode
-        if mode == "llm-chat-testing":
+        if mode == "chat":
             self.conversation()
     
     def _call_chat(self, llm: ChatLiteLLM, input: str, memory: ConversationBufferWindowMemory = None) -> str:
