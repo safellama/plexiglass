@@ -10,9 +10,14 @@ Wondering if your AI model is safe enough to use? Plexiglass is your sparring pa
 
 ## What is Plexiglass?
 
-Plexiglass is a Python toolbox designed for penetration testing against adversarial attacks in machine learning. This toolbox includes a command-line interface (CLI) tool named `plx`, and it can also be imported as a library in Python applications.
+Plexiglass is a Python toolbox designed for penetration testing against adversarial attacks in LLMs.
 
-Plexiglass's Python library has two modules: LLMs and DNNs. For LLMs, plexiglass uses [litellm](https://github.com/BerriAI/litellm) under the hood. 
+Plexiglass uses [litellm](https://github.com/BerriAI/litellm) under the hood. 
+
+Simply [install](#Installation) and run `plx --help` to get started.
+
+Here's a demo:
+![alt](plexiglass/assets/demo_fast.gif)
 
 We are working tirelessly to include more frameworks and attack/ defense mechanisms for testing. Please read our [docs](https://kortex-labs.github.io/plexiglass/build/html/index.html) for the latest updates.
 
@@ -22,10 +27,6 @@ We are working tirelessly to include more frameworks and attack/ defense mechani
 > [!NOTE]
 > Plexiglass is open-source: Please leave a star to support the project! ⭐
 
-## What is Adversarial Machine Learning?
-
-Adversarial machine learning tricks AI models into making errors by subtly altering input data.
-
 ## Installation
 
 The first experimental release is version `0.0.1`.
@@ -33,17 +34,6 @@ The first experimental release is version `0.0.1`.
 To download the package from PyPi:
 
 `pip install --upgrade plexiglass`
-
-## Getting Started
-
-### PLX
-
-Plexiglass has a CLI called `plx`.
-
-Simply run `plx --help` to get started.
-
-Here's a demo:
-![alt](plexiglass/assets/demo_fast.gif)
 
 ### Feature Request
 To request new features, please submit an [issue](https://github.com/enochkan/plexiglass/issues)

@@ -1,5 +1,5 @@
 from detoxify import Detoxify
-from plexiglass.LLM.attacks.injection import basic_injection 
+from plexiglass.toolkit.attacks.injection import basic_injection 
 import pandas as pd
 
 def measure_toxicity(prompt: str):
