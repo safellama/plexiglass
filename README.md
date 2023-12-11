@@ -24,7 +24,7 @@ We are working tirelessly to include more frameworks and attack/ defense mechani
 
 ## What is Adversarial Machine Learning?
 
-Adversarial machine learning involves manipulating input data to deceive machine learning models. In deep neural networks (DNNs) and large language models (LLMs), attacks include adding subtly modified inputs that cause incorrect model predictions or responses. These attacks exploit model vulnerabilities, testing their robustness and security.
+Adversarial machine learning tricks AI models into making errors by subtly altering input data.
 
 ## Installation
 
@@ -42,6 +42,7 @@ Plexiglass has a CLI called `plx`.
 
 Simply run `plx --help` to get started.
 
+Here's a demo:
 ![alt](plexiglass/assets/demo.gif)
 
 ### Feature Request
