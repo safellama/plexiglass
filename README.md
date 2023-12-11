@@ -43,7 +43,7 @@ Plexiglass has a CLI called `plx`.
 Simply run `plx --help` to get started.
 
 Here's a demo:
-![alt](plexiglass/assets/demo.gif)
+![alt](plexiglass/assets/demo_fast.gif)
 
 ### Feature Request
 To request new features, please submit an [issue](https://github.com/enochkan/plexiglass/issues)
