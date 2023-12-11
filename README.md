@@ -37,11 +37,11 @@ To download the package from PyPi:
 
 ## Modes
 
-Plexiglass has two modes: `chat` and `benchmark`.
+Plexiglass has two modes: `llm-chat` and `llm-scan`.
 
-`chat` allows you to converse with the LLM and measure predefined metrics, such as toxicity, from its responses.
+`llm-chat` allows you to converse with the LLM and measure predefined metrics, such as toxicity, from its responses.
 
-`benchmark` runs tests to identify and assess various vulnerabilities in the LLM.
+`llm-scan` runs tests to identify and assess various vulnerabilities in the LLM.
 
 ## Feature Request
 To request new features, please submit an [issue](https://github.com/enochkan/plexiglass/issues)

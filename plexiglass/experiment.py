@@ -7,12 +7,12 @@ import sys
 import pandas as pd
 
 class Experiment:
-    def __init__(self, model_type: str, model_name: str, mode: str = "chat"):
+    def __init__(self, model_type: str, model_name: str, mode: str = "llm-chat"):
         self.model = Model(model_type, model_name).model
         self.conversation_history = []
         
         ## define mode
-        if mode == "chat":
+        if mode == "llm-chat":
             self.conversation()
     
     def _call_chat(self, llm: ChatLiteLLM, input: str, memory: ConversationBufferWindowMemory = None) -> str:

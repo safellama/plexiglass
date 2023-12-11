@@ -32,22 +32,22 @@ def config_llm():
     os.environ[config[provider]["api_key_var_name"]] = api_key
 
     typer.echo(f"Selected provider and model: {provider}, {model}")
-    return Experiment(model_type=provider, model_name=model, mode="chat")
+    return Experiment(model_type=provider, model_name=model, mode="llm-chat")
 
 def run_llm(experiment):
     experiment.conversation()
 
 @app.command()
-def main(mode: Annotated[str, typer.Option(help="Mode to run. Choose from: chat, scan")], 
+def main(mode: Annotated[str, typer.Option(help="Mode to run. Choose from: llm-chat, llm-scan")], 
          metrics: Annotated[str, typer.Option(help="Metrics to monitor. Choose from: toxicity")]):
     """
     This application performs different tasks based on the selected mode.
     """
     
-    if mode.lower() == "chat":
+    if mode.lower() == "llm-chat":
         experiment = config_llm()
         run_llm(experiment)
-    elif mode.lower() == "scan":
+    elif mode.lower() == "llm-scan":
         typer.echo("This mode is not implemented yet.")
     else:
         typer.echo("Invalid mode selected.")
