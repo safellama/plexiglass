@@ -1,4 +1,4 @@
-from model import Model
+from .model import Model
 from langchain.chains import ConversationChain
 from langchain.chains.conversation.memory import ConversationBufferWindowMemory
 from langchain.chat_models import ChatLiteLLM

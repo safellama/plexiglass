@@ -1,8 +1,9 @@
 import typer
-from experiment import Experiment
+from .experiment import Experiment
 from InquirerPy import inquirer
 import json, os
 from getpass import getpass
+from typing_extensions import Annotated
 
 app = typer.Typer()
 
@@ -36,18 +37,13 @@ def config_llm():
 def run_llm(experiment):
     experiment.conversation()
 
-
 @app.command()
-def main(mode: str = typer.Option("llm-chat-testing", 
-                                  "--mode", 
-                                  help="Choose the mode of operation",
-                                  case_sensitive=False,
-                                  prompt="Please select a mode",
-                                  show_default=True)):
+def main(mode: Annotated[str, typer.Option(help="Mode to run. Choose from: llm-chat, llm-benchmark, dnn-testing")]):
     """
     This application performs different tasks based on the selected mode.
     """
-    if mode.lower() == "llm-chat-testing":
+    
+    if mode.lower() == "llm-chat":
         experiment = config_llm()
         run_llm(experiment)
     elif mode.lower() == "llm-benchmarking":
@@ -56,6 +52,3 @@ def main(mode: str = typer.Option("llm-chat-testing",
         typer.echo("This mode is not implemented yet.")
     else:
         typer.echo("Invalid mode selected.")
-
-if __name__ == "__main__":
-    app()

@@ -22,7 +22,7 @@ dependencies = [
     "transformers",
     "accelerate",
     "typer",
-    "inquererpy"
+    "inquirerpy"
 ]
 requires-python = ">=3.6"  # Specify your minimum Python version
 
@@ -31,11 +31,4 @@ Homepage = "https://github.com/kortex-labs/plexiglass"
 Issues = "https://github.com/kortex-labs/plexiglass/issues"
 
 [project.scripts]
-plx-cli = "my_package.my_module:main_cli"
-
-# Add any optional dependencies or scripts if you have them
-# [project.optional-dependencies]
-# dev = ["dependency1", "dependency2"]
-
-# [project.scripts]
-# script_name = "module:function"
+plx = "plexiglass.cli:app"
