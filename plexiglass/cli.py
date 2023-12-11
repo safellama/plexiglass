@@ -38,7 +38,8 @@ def run_llm(experiment):
     experiment.conversation()
 
 @app.command()
-def main(mode: Annotated[str, typer.Option(help="Mode to run. Choose from: llm-chat, llm-benchmark, dnn-testing")]):
+def main(mode: Annotated[str, typer.Option(help="Mode to run. Choose from: llm-chat, llm-benchmark, dnn-testing")], 
+         metrics: Annotated[str, typer.Option(help="Metrics to monitor. Choose from: toxicity")]):
     """
     This application performs different tasks based on the selected mode.
     """
