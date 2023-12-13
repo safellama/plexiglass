@@ -10,7 +10,7 @@ Wondering if your AI model is safe enough to use? Plexiglass is your sparring pa
 
 ## What is Plexiglass?
 
-Plexiglass is a Python toolbox designed for penetration testing against adversarial attacks in LLMs.
+Plexiglass is a toolbox designed to test vulnerabilities and safeguard LLMs.
 
 Plexiglass uses [litellm](https://github.com/BerriAI/litellm) under the hood. 
 
