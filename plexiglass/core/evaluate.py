@@ -1,8 +1,8 @@
 from detoxify import Detoxify
-from plexiglass.toolkit.attacks.injection import basic_injection 
+from plexiglass.core.attacks.injection import basic_injection 
 import pandas as pd
 
-def measure_toxicity(prompt: str):
+def evaluate_toxcity(prompt: str):
     return Detoxify('original').predict(prompt)
 
 def evaluate(model, metrics: list = ["toxicity"], attacks: list = ["prompt_injection"]):
