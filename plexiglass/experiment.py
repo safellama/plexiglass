@@ -2,7 +2,7 @@ from .model import Model
 from langchain.chains import ConversationChain
 from langchain.chains.conversation.memory import ConversationBufferWindowMemory
 from langchain.chat_models import ChatLiteLLM
-from .core.evaluate import evaluate_toxcity
+from .core.evaluate import evaluate
 import sys
 import pandas as pd
 
@@ -47,7 +47,7 @@ class Experiment:
             scores = []
             print("\nCalculating results ...")
             for convo in self.conversation_history:
-                scores.append(evaluate_toxcity(convo))
+                scores.append(evaluate(convo))
             results = pd.DataFrame(scores)
             results["response"] = self.conversation_history
             # move column to front
