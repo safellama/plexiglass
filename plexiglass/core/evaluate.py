@@ -1,9 +1,12 @@
 from detoxify import Detoxify
-from plexiglass.core.attacks.injection import basic_injection 
+from plexiglass.core.red.injection import basic_injection 
 import pandas as pd
 
 def evaluate_toxcity(prompt: str):
     return Detoxify('original').predict(prompt)
+
+def evaluate_pii(prompt: str):
+    
 
 def evaluate(model, metrics: list = ["toxicity"], attacks: list = ["prompt_injection"]):
     # responses = []
