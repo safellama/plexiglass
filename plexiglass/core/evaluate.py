@@ -6,7 +6,7 @@ def evaluate_toxcity(prompt: str):
     return Detoxify('original').predict(prompt)
 
 def evaluate_pii(prompt: str):
-    
+    pass
 
 def evaluate(model, metrics: list = ["toxicity"], attacks: list = ["prompt_injection"]):
     # responses = []
