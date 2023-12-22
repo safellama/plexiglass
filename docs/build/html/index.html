@@ -33,6 +33,7 @@
     <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Build and Install" href="install.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -84,7 +85,43 @@
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Install
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="install.html">
+   Build and Install
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Usage
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="quick-start.html">
+   Quick Start Guide
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Further Reading
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="code-of-conduct.html">
+   Code of Conduct
+  </a>
+ </li>
+</ul>
+
     </div>
 </nav></div>
         <div class="bd-sidebar__bottom">
@@ -242,11 +279,8 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#community-involvement">
    Community Involvement
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#documentation-and-further-information">
-   Documentation and Further Information
-  </a>
+  <ul class="visible nav section-nav flex-column">
+  </ul>
  </li>
 </ul>
 
@@ -281,11 +315,8 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#community-involvement">
    Community Involvement
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#documentation-and-further-information">
-   Documentation and Further Information
-  </a>
+  <ul class="visible nav section-nav flex-column">
+  </ul>
  </li>
 </ul>
 
@@ -303,11 +334,8 @@ title="Print to PDF"
 <section id="key-features">
 <h2>Key Features<a class="headerlink" href="#key-features" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
-<li><p><strong>Security-focused LLM Toolbox</strong>: Plexiglass is crafted as a security toolbox specifically for testing and safeguarding LLMs, making it an essential tool for developers working with these models.</p></li>
-<li><p><strong>Versatile Testing Modes</strong>: It offers two primary modes of operation: <cite>llm-chat</cite> and <cite>llm-scan</cite>. The <cite>llm-chat</cite> mode enables interactive conversations with LLMs, allowing the assessment of predefined metrics like toxicity in responses. Meanwhile, the <cite>llm-scan</cite> mode is designed to run tests to identify and evaluate various vulnerabilities within LLMs.</p></li>
-<li><p><strong>Ease of Use</strong>: Users can begin using Plexiglass simply by installing it and running <cite>plx –help</cite> for guidance, emphasizing user-friendliness and accessibility.</p></li>
-<li><p><strong>Open-Source and Community-Driven</strong>: Plexiglass is an open-source project, encouraging community contributions and feedback. This collaborative approach ensures continuous improvement and adaptation to emerging security needs in LLMs.</p></li>
-<li><p><strong>First Release and Installation</strong>: The first experimental release of Plexiglass is version <cite>0.0.1</cite>, available for download from PyPi. Users can easily install it using the command <cite>pip install –upgrade plexiglass</cite>.</p></li>
+<li><p><strong>Security-focused LLM Toolbox</strong>: Plexiglass is crafted as a security toolbox specifically for testing and safeguarding LLMs, making it an essential tool for developers working with LLMs.</p></li>
+<li><p><strong>Versatile Testing Modes</strong>: It offers two primary modes of operation: a command line interface (CLI) or a standalone python module. This versatility allows developers to choose the mode that best suits their needs.</p></li>
 </ul>
 </section>
 <section id="inspiration-and-compatibility">
@@ -322,12 +350,24 @@ title="Print to PDF"
 <ul class="simple">
 <li><p>Kortex Labs emphasizes the importance of community involvement in Plexiglass’s development. They are actively seeking contributors to further enrich the toolbox and extend its capabilities.</p></li>
 </ul>
-</section>
-<section id="documentation-and-further-information">
-<h2>Documentation and Further Information<a class="headerlink" href="#documentation-and-further-information" title="Permalink to this headline">#</a></h2>
-<ul class="simple">
-<li><p>Comprehensive documentation for Plexiglass is available, providing users with detailed information on its features, installation, and usage.</p></li>
+<div class="toctree-wrapper compound">
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Install</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Build and Install</a></li>
 </ul>
+</div>
+<div class="toctree-wrapper compound">
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Usage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="quick-start.html">Quick Start Guide</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Further Reading</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="code-of-conduct.html">Code of Conduct</a></li>
+</ul>
+</div>
 </section>
 </section>
 
@@ -339,6 +379,13 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
+    <a class='right-next' id="next-link" href="install.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Build and Install</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
             </footer>
         </div>

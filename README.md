@@ -4,7 +4,7 @@ Plexiglass</h1>
 <!-- <p align="center"> -->
 
 [**Quickstart**](#quickstart) | [**Installation**](#installation) |
-[**Documentation**](https://kortex-labs.github.io/plexiglass/build/html/index.html) | [**Modes**](#modes) | [**Feature Request**](#feature-request)
+[**Documentation**](https://kortex-labs.github.io/plexiglass/build/html/index.html) | [**Modes**](#modes) | [**Code of Conduct**](#code-of-conduct)
 
 <a href="https://badge.fury.io/py/plexiglass"><img src="https://badge.fury.io/py/plexiglass.svg" alt="PyPI version" height="18"></a>
 <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-apache2.0-yellow.svg" alt="license MIT" height="18"></a>
@@ -56,5 +56,7 @@ To request new features, please submit an [issue](https://github.com/enochkan/pl
 <a href="https://github.com/kortex-labs/plexiglass/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=kortex-labs/plexiglass" />
 </a>
+
+### Code of Conduct
 
 Made with [contrib.rocks](https://contrib.rocks).

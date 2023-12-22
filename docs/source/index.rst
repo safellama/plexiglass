@@ -6,15 +6,9 @@ Plexiglass is an innovative toolbox designed to test vulnerabilities and safegua
 Key Features
 ------------
 
-- **Security-focused LLM Toolbox**: Plexiglass is crafted as a security toolbox specifically for testing and safeguarding LLMs, making it an essential tool for developers working with these models.
+- **Security-focused LLM Toolbox**: Plexiglass is crafted as a security toolbox specifically for testing and safeguarding LLMs, making it an essential tool for developers working with LLMs.
 
-- **Versatile Testing Modes**: It offers two primary modes of operation: `llm-chat` and `llm-scan`. The `llm-chat` mode enables interactive conversations with LLMs, allowing the assessment of predefined metrics like toxicity in responses. Meanwhile, the `llm-scan` mode is designed to run tests to identify and evaluate various vulnerabilities within LLMs.
-
-- **Ease of Use**: Users can begin using Plexiglass simply by installing it and running `plx --help` for guidance, emphasizing user-friendliness and accessibility.
-
-- **Open-Source and Community-Driven**: Plexiglass is an open-source project, encouraging community contributions and feedback. This collaborative approach ensures continuous improvement and adaptation to emerging security needs in LLMs.
-
-- **First Release and Installation**: The first experimental release of Plexiglass is version `0.0.1`, available for download from PyPi. Users can easily install it using the command `pip install --upgrade plexiglass`.
+- **Versatile Testing Modes**: It offers two primary modes of operation: a command line interface (CLI) or a standalone python module. This versatility allows developers to choose the mode that best suits their needs.
 
 Inspiration and Compatibility
 ------------------------------
@@ -28,7 +22,20 @@ Community Involvement
 
 - Kortex Labs emphasizes the importance of community involvement in Plexiglass's development. They are actively seeking contributors to further enrich the toolbox and extend its capabilities.
 
-Documentation and Further Information
--------------------------------------
+.. toctree::
+   :caption: Install
+   :maxdepth: 1
 
-- Comprehensive documentation for Plexiglass is available, providing users with detailed information on its features, installation, and usage.
+   install
+
+.. toctree::
+   :caption: Usage
+   :maxdepth: 1
+
+   quick-start
+
+.. toctree::
+   :caption: Further Reading
+   :maxdepth: 1
+
+   code-of-conduct
