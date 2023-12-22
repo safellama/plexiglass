@@ -8,16 +8,29 @@ import pandas as pd
 from .utils import colorfy
 
 class Experiment:
-    def __init__(self, model_type: str, model_name: str, mode: str = "llm-chat", metrics: list = ["toxicity", "pii"]):
+    def __init__(self, model_type: str, model_name: str, metrics: list = ["toxicity", "pii"]) -> None:
+        """Initialize an experiment.
+
+        Args:
+            model_type (str): Type of model to use.
+            model_name (str): Name of model to use.
+            metrics (list, optional): Metrics to evaluate. Defaults to ["toxicity", "pii"].
+        """
         self.model = Model(model_type, model_name).model
         self.conversation_history = []
         self.metrics = metrics
-        
-        ## define mode
-        if mode == "llm-chat":
-            self.conversation()
     
     def _call_chat(self, llm: ChatLiteLLM, input: str, memory: ConversationBufferWindowMemory = None) -> str:
+        """Call the chat function of a model using LiteLLM.
+
+        Args:
+            llm (ChatLiteLLM): ChatLiteLLM object in LangChain.
+            input (str): Input string.
+            memory (ConversationBufferWindowMemory, optional): Windowed buffer memory of LLM in LangChain. Defaults to None.
+
+        Returns:
+            str: Response of the model.
+        """
         conversation = ConversationChain(
                     llm=llm,
                     memory=memory
@@ -25,7 +38,15 @@ class Experiment:
         response = conversation(input)
         return response
 
-    def _get_multiline(self, prompt: str = ""):
+    def _get_multiline(self, prompt: str = "") -> str:
+        """Get multiline input from user using triple quotes.
+
+        Args:
+            prompt (str, optional): Initial prompt for input. Defaults to "".
+
+        Returns:
+            str: Multiline input joined by newline characters.
+        """        
         first = input(prompt)
         
         # Check if input starts with triple quotes
@@ -45,7 +66,8 @@ class Experiment:
 
         return "\n".join(lines)
 
-    def conversation(self):
+    def conversation(self) -> None:
+        """Start a conversation with a model."""
         memory = ConversationBufferWindowMemory(k=3, memory_key="history", return_messages=True)
         try:
             while True:
