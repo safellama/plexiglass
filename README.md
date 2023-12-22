@@ -3,14 +3,12 @@
 Plexiglass</h1>
 <!-- <p align="center"> -->
 
-[**Quickstart**](#quickstart) | [**Installation**](#installation) |
-[**Documentation**](https://kortex-labs.github.io/plexiglass/build/html/index.html) | [**Modes**](#modes) | [**Code of Conduct**](#code-of-conduct)
+[**Quickstart**](https://kortex-labs.github.io/plexiglass/build/html/quick-start.html) | [**Installation**](#installation) |
+[**Documentation**](https://kortex-labs.github.io/plexiglass/build/html/index.html) | [**Code of Conduct**](#code-of-conduct)
 
 <a href="https://badge.fury.io/py/plexiglass"><img src="https://badge.fury.io/py/plexiglass.svg" alt="PyPI version" height="18"></a>
 <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-apache2.0-yellow.svg" alt="license MIT" height="18"></a>
 </p>
-
-## Quickstart
 
 Plexiglass is a toolkit for detecting and protecting against vulnerabilities in Large Language Models (LLMs).
 
@@ -18,13 +16,6 @@ Simply [install](#Installation) and run `plx --help` to get started.
 
 Here's Plexiglass in action:
 ![alt](plexiglass/assets/demo_fast.gif)
-<!-- 
-
-> [!IMPORTANT]
-> We are looking for contributors! Fork the repo to get started. Contribution guide is coming soon.
-
-> [!NOTE]
-> Plexiglass is open-source: Please leave a star to support the project! ⭐ -->
 
 ## Installation
 
@@ -58,5 +49,7 @@ To request new features, please submit an [issue](https://github.com/enochkan/pl
 </a>
 
 ### Code of Conduct
+
+Read our [Code of Conduct](https://kortex-labs.github.io/plexiglass/build/html/code-of-conduct.html).
 
 Made with [contrib.rocks](https://contrib.rocks).
