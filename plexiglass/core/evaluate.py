@@ -16,16 +16,16 @@ def evaluate_pii(prompt: str):
     return ner_results
 
 
-def evaluate(prompt, metrics: list = ["toxicity"]):
-    if "toxicity" in metrics:
-        toxicity = evaluate_toxcity(prompt)
-    if "pii" in metrics:
-        pii = evaluate_pii(prompt)
-    return {
-        "toxicity": toxicity,
-        "pii": pii
-    }
-    
+def evaluate(prompt, metrics: list = ["toxicity", "pii"]):
+    results = {}
+    for metric in metrics:
+        if metric == "toxicity":
+            toxicity = evaluate_toxcity(prompt)
+            results.update(toxicity)
+        elif metric == "pii":
+            pii = evaluate_pii(prompt)
+            results.update({"pii_detected": pii})
+    return results
 
 if __name__ == "__main__":
     evaluate()

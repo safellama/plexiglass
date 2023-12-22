@@ -7,9 +7,10 @@ import sys
 import pandas as pd
 
 class Experiment:
-    def __init__(self, model_type: str, model_name: str, mode: str = "llm-chat"):
+    def __init__(self, model_type: str, model_name: str, mode: str = "llm-chat", metrics: list = ["toxicity", "pii"]):
         self.model = Model(model_type, model_name).model
         self.conversation_history = []
+        self.metrics = metrics
         
         ## define mode
         if mode == "llm-chat":
@@ -25,13 +26,22 @@ class Experiment:
 
     def _get_multiline(self, prompt: str = "[llm-chat] Human Tester: "):
         first = input(prompt)
-        lines = [first]
-        while True:
-            line = input()
-            if line:
-                lines.append(line)
-            else:
-                break
+        
+        # Check if input starts with triple quotes
+        if first.startswith('"""'):
+            lines = [first[3:]]  # Remove the starting triple quotes
+            in_multiline = True
+            while in_multiline:
+                line = input()
+                if line.endswith('"""'):
+                    lines.append(line[:-3])  # Remove the ending triple quotes
+                    in_multiline = False
+                else:
+                    lines.append(line)
+        else:
+            # Single line input
+            lines = [first]
+
         return "\n".join(lines)
 
     def conversation(self):
@@ -47,7 +57,7 @@ class Experiment:
             scores = []
             print("\nCalculating results ...")
             for convo in self.conversation_history:
-                scores.append(evaluate(convo))
+                scores.append(evaluate(convo, metrics=self.metrics))
             results = pd.DataFrame(scores)
             results["response"] = self.conversation_history
             # move column to front
