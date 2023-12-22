@@ -13,7 +13,7 @@ Plexiglass</h1>
 Plexiglass is a toolkit for detecting and protecting against vulnerabilities in Large Language Models (LLMs).
 
 Here's Plexiglass in action:
-![alt](plexiglass/assets/demo_fast.gif)
+![alt](plexiglass/assets/example.png)
 
 ## Installation
 
