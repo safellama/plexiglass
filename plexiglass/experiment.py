@@ -5,6 +5,7 @@ from langchain.chat_models import ChatLiteLLM
 from .core.evaluate import evaluate
 import sys
 import pandas as pd
+from .colors import bcolors
 
 class Experiment:
     def __init__(self, model_type: str, model_name: str, mode: str = "llm-chat", metrics: list = ["toxicity", "pii"]):
@@ -24,7 +25,7 @@ class Experiment:
         response = conversation(input)
         return response
 
-    def _get_multiline(self, prompt: str = "[llm-chat] Human Tester: "):
+    def _get_multiline(self, prompt: str = ""):
         first = input(prompt)
         
         # Check if input starts with triple quotes
@@ -48,9 +49,9 @@ class Experiment:
         memory = ConversationBufferWindowMemory(k=3, memory_key="history", return_messages=True)
         try:
             while True:
-                user_input = self._get_multiline(prompt = "[llm-chat] Human Tester: ")
+                user_input = self._get_multiline(prompt = f"{bcolors.OKBLUE}[Human Tester] {bcolors.ENDC}")
                 response = self._call_chat(self.model, user_input, memory)
-                print("[llm-chat] LLM:", response["response"], "\n")
+                print(f"\n{bcolors.OKBLUE}[LLM] {bcolors.ENDC}", response["response"], "\n")
                 self.conversation_history.append(response["response"])
         except KeyboardInterrupt:
             print("\nConversation ended.")
