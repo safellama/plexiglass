@@ -12,8 +12,6 @@ Plexiglass</h1>
 
 Plexiglass is a toolkit for detecting and protecting against vulnerabilities in Large Language Models (LLMs).
 
-Simply [install](#Installation) and run `plx --help` to get started.
-
 Here's Plexiglass in action:
 ![alt](plexiglass/assets/demo_fast.gif)
 
@@ -27,7 +25,9 @@ To download the package from PyPi:
 
 ## Modes
 
-Plexiglass has two modes: `llm-chat` and `llm-scan`.
+Plexiglass can be used as a CLI tool as well as a standalone python lib (under development).
+
+The CLI tool has two modes: `llm-chat` and `llm-scan`.
 
 `llm-chat` allows you to converse with the LLM and measure predefined metrics, such as toxicity, from its responses.
 
