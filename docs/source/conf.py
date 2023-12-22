@@ -50,6 +50,8 @@ html_theme_options = {
 
 html_logo = "_static/plexiglass.png"
 
+html_title = "Plexiglass"
+
 
 # -- Options for HTMLHelp output ---------------------------------------------
 
