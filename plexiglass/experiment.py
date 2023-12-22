@@ -5,7 +5,7 @@ from langchain.chat_models import ChatLiteLLM
 from .core.evaluate import evaluate
 import sys
 import pandas as pd
-from .colors import bcolors
+from .utils import colorfy
 
 class Experiment:
     def __init__(self, model_type: str, model_name: str, mode: str = "llm-chat", metrics: list = ["toxicity", "pii"]):
@@ -49,9 +49,9 @@ class Experiment:
         memory = ConversationBufferWindowMemory(k=3, memory_key="history", return_messages=True)
         try:
             while True:
-                user_input = self._get_multiline(prompt = f"{bcolors.OKBLUE}[Human Tester] {bcolors.ENDC}")
+                user_input = self._get_multiline(prompt = colorfy("[Human Tester] "))
                 response = self._call_chat(self.model, user_input, memory)
-                print(f"\n{bcolors.OKBLUE}[LLM] {bcolors.ENDC}", response["response"], "\n")
+                print(colorfy("\n[LLM] "), response["response"], "\n")
                 self.conversation_history.append(response["response"])
         except KeyboardInterrupt:
             print("\nConversation ended.")

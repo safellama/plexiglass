@@ -46,7 +46,6 @@ def main(mode: Annotated[str, typer.Option(help="Mode to run. Choose from: llm-c
     """
     
     if mode.lower() == "llm-chat":
-        print(metrics)
         experiment = config_llm(metrics)
         run_llm(experiment)
     elif mode.lower() == "llm-scan":
