@@ -8,18 +8,18 @@ Plexiglass</h1>
 </p>
 <!-- <p align="center">A Python Machine Learning Security Toolbox for Adversarial Attacks. Works with LLMs, DNNs, and other machine learning algorithms.</p> -->
 
-## What is Plexiglass?
+[**Quickstart**](#quickstart) | [**Installation**](#installation) |
+[**Documentation**](https://kortex-labs.github.io/plexiglass/build/html/index.html)
+
+## Quickstart
 
 Plexiglass is a toolkit for detecting and protecting against vulnerabilities in Large Language Models (LLMs).
-
-Plexiglass uses [litellm](https://github.com/BerriAI/litellm) under the hood. 
 
 Simply [install](#Installation) and run `plx --help` to get started.
 
 Here's a demo:
 ![alt](plexiglass/assets/demo_fast.gif)
 
-We are working tirelessly to include more frameworks and attack/ defense mechanisms for testing. Please read our [docs](https://kortex-labs.github.io/plexiglass/build/html/index.html) for the latest updates.
 
 > [!IMPORTANT]
 > We are looking for contributors! Fork the repo to get started. Contribution guide is coming soon.
