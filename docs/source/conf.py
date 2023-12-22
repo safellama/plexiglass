@@ -1,29 +1,17 @@
-# Configuration file for the Sphinx documentation builder.
-#
-# This file only contains a selection of the most common options. For a full
-# list see the documentation:
-# https://www.sphinx-doc.org/en/master/usage/configuration.html
+# Copyright © 2023 Kortex Labs.
 
-# -- Path setup --------------------------------------------------------------
+# -*- coding: utf-8 -*-
 
-# If extensions (or modules to document with autodoc) are in another directory,
-# add these directories to sys.path here. If the directory is relative to the
-# documentation root, use os.path.abspath to make it absolute, like shown here.
-#
-# import os
-# import sys
-# sys.path.insert(0, os.path.abspath('.'))
-
+import os
+import subprocess
 
 # -- Project information -----------------------------------------------------
 
-project = 'plexiglass'
-copyright = '2023, kortex-labs'
-author = 'kortex-labs'
-
-# The full version, including alpha/beta/rc tags
-release = '0.0.1'
-
+project = "Plexiglass"
+copyright = "2023, Kortex Labs"
+author = "Kortex Labs"
+version = "0.0.1"
+release = "0.0.1"
 
 # -- General configuration ---------------------------------------------------
 
@@ -60,7 +48,9 @@ html_theme_options = {
     "navigation_with_keys": False,
 }
 
+html_logo = "_static/plexiglass.png"
+
 
 # -- Options for HTMLHelp output ---------------------------------------------
 
-htmlhelp_basename = "mlx_doc"
+htmlhelp_basename = "plexiglass_doc"

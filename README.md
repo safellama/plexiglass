@@ -10,7 +10,7 @@ Plexiglass</h1>
 
 ## What is Plexiglass?
 
-Plexiglass is a toolbox designed to test vulnerabilities and safeguard LLMs.
+Plexiglass is a toolkit for detecting and protecting against vulnerabilities in Large Language Models (LLMs).
 
 Plexiglass uses [litellm](https://github.com/BerriAI/litellm) under the hood. 
 
