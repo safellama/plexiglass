@@ -16,15 +16,15 @@ Plexiglass is a toolkit for detecting and protecting against vulnerabilities in 
 
 Simply [install](#Installation) and run `plx --help` to get started.
 
-Here's a demo:
+Here's Plexiglass in action:
 ![alt](plexiglass/assets/demo_fast.gif)
-
+<!-- 
 
 > [!IMPORTANT]
 > We are looking for contributors! Fork the repo to get started. Contribution guide is coming soon.
 
 > [!NOTE]
-> Plexiglass is open-source: Please leave a star to support the project! ⭐
+> Plexiglass is open-source: Please leave a star to support the project! ⭐ -->
 
 ## Installation
 
