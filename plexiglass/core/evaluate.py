@@ -4,10 +4,27 @@ from transformers import AutoTokenizer, AutoModelForTokenClassification
 from transformers import pipeline
 import pandas as pd
 
-def evaluate_toxcity(prompt: str):
+def evaluate_toxcity(prompt: str) -> dict:
+    """Evaluate toxicity of a prompt.
+
+    Args:
+        prompt (str): String to evaluate.
+
+    Returns:
+        dict: toxicity score.
+    """
     return Detoxify('original').predict(prompt)
 
-def evaluate_pii(prompt: str):
+def evaluate_pii(prompt: str) -> list:
+    """Evaluate PII of a prompt.
+
+    Args:
+        prompt (str): String to evaluate.
+
+    Returns:
+        list: List of PII detected.
+    """
+    
     tokenizer = AutoTokenizer.from_pretrained("dslim/bert-base-NER")
     model = AutoModelForTokenClassification.from_pretrained("dslim/bert-base-NER")
 
@@ -16,7 +33,16 @@ def evaluate_pii(prompt: str):
     return ner_results
 
 
-def evaluate(prompt, metrics: list = ["toxicity", "pii"]):
+def evaluate(prompt: str, metrics: list = ["toxicity", "pii"]) -> dict:
+    """Evaluate a prompt given a list of metrics.
+
+    Args:
+        prompt (str): String to evaluate.
+        metrics (list, optional): Metrics to evaluate. Defaults to ["toxicity", "pii"].
+
+    Returns:
+        dict: Dictionary containing results of evaluation.
+    """
     results = {}
     for metric in metrics:
         if metric == "toxicity":

@@ -8,12 +8,25 @@ from typing_extensions import Annotated
 
 app = typer.Typer()
 
-def _load_options():
+def _load_options() -> dict:
+    """Load available model options from options.json.
+
+    Returns:
+        dict: Available model options.
+    """
     with open('./plexiglass/config/options.json') as f:
         options_json = json.load(f)
         return options_json
 
-def config_llm(metrics):
+def config_llm(metrics: list) -> Experiment:
+    """Configure LLM experiment.
+
+    Args:
+        metrics (list): List of metrics to evaluate in the experiment.
+
+    Returns:
+        Experiment: Experiment object.
+    """
     config = _load_options()
 
     ## select provider
@@ -35,7 +48,12 @@ def config_llm(metrics):
     typer.echo(f"Selected provider and model: {provider}, {model}")
     return Experiment(model_type=provider, model_name=model, mode="llm-chat", metrics=metrics)
 
-def run_llm(experiment):
+def run_llm(experiment: Experiment) -> None:
+    """Execute LLM experiment.
+
+    Args:
+        experiment (Experiment): Experiment object.
+    """
     experiment.conversation()
 
 @app.command()
