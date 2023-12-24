@@ -38,7 +38,7 @@ To request new features, please submit an [issue](https://github.com/enochkan/pl
 
 ## Local Development
 
-[Join us in #plexiglass on Discord.](https://discord.gg/RrH9fWP2)
+[Join us in #plexiglass on Discord.](https://discord.gg/sHuzVV8tQv)
 
 ## Contributors
 
