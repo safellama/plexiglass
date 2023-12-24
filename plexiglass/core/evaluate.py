@@ -1,5 +1,4 @@
 from detoxify import Detoxify
-from plexiglass.core.red.injection import basic_injection 
 from transformers import AutoTokenizer, AutoModelForTokenClassification
 from transformers import pipeline
 import pandas as pd

@@ -46,7 +46,7 @@ def config_llm(metrics: list) -> Experiment:
     os.environ[config[provider]["api_key_var_name"]] = api_key
 
     typer.echo(f"Selected provider and model: {provider}, {model}")
-    return Experiment(model_type=provider, model_name=model, mode="llm-chat", metrics=metrics)
+    return Experiment(model_type=provider, model_name=model, metrics=metrics)
 
 def run_llm(experiment: Experiment) -> None:
     """Execute LLM experiment.

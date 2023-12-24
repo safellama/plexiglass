@@ -2,6 +2,7 @@ from .model import Model
 from langchain.chains import ConversationChain
 from langchain.chains.conversation.memory import ConversationBufferWindowMemory
 from langchain.chat_models import ChatLiteLLM
+from InquirerPy import inquirer
 from .core.evaluate import evaluate
 import sys
 import pandas as pd
@@ -71,7 +72,14 @@ class Experiment:
         memory = ConversationBufferWindowMemory(k=3, memory_key="history", return_messages=True)
         try:
             while True:
-                user_input = self._get_multiline(prompt = colorfy("[Human Tester] "))
+                options = inquirer.select(
+                    message="Select your input type:",
+                    choices=list(["template", "free_text"]),
+                ).execute()
+                if options == "free_text":
+                    user_input = self._get_multiline(prompt = colorfy("[Human Tester] "))
+                else:
+                    user_input = """template"""
                 response = self._call_chat(self.model, user_input, memory)
                 print(colorfy("\n[LLM] "), response["response"], "\n")
                 self.conversation_history.append(response["response"])
