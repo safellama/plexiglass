@@ -8,6 +8,7 @@ Plexiglass</h1>
 
 <a href="https://badge.fury.io/py/plexiglass"><img src="https://badge.fury.io/py/plexiglass.svg" alt="PyPI version" height="18"></a>
 <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-apache2.0-yellow.svg" alt="license MIT" height="18"></a>
+<img alt="PyPI - Downloads" src="https://img.shields.io/pypi/dm/plexiglass">
 </p>
 
 Plexiglass is a toolkit for detecting and protecting against vulnerabilities in Large Language Models (LLMs).
