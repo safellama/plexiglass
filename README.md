@@ -50,6 +50,6 @@ To request new features, please submit an [issue](https://github.com/enochkan/pl
 
 ### Code of Conduct
 
-Read our [Code of Conduct](https://kortex-labs.github.io/plexiglass/build/html/code-of-conduct.html).
+Read our [Code of Conduct](https://safellama.github.io/plexiglass/build/html/code-of-conduct.html).
 
 Made with [contrib.rocks](https://contrib.rocks).
