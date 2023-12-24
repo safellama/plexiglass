@@ -1,4 +1,4 @@
-# Copyright © 2023 Kortex Labs.
+# Copyright © 2023 SafeLlama.
 
 # -*- coding: utf-8 -*-
 
@@ -8,8 +8,8 @@ import subprocess
 # -- Project information -----------------------------------------------------
 
 project = "Plexiglass"
-copyright = "2023, Kortex Labs"
-author = "Kortex Labs"
+copyright = "2023, SafeLlama"
+author = "SafeLlama"
 version = "0.0.1"
 release = "0.0.1"
 
@@ -43,7 +43,7 @@ html_theme = "sphinx_book_theme"
 
 html_theme_options = {
     "show_toc_level": 2,
-    "repository_url": "https://github.com/kortex-labs/plexiglass",
+    "repository_url": "https://github.com/safellama/plexiglass",
     "use_repository_button": True,
     "navigation_with_keys": False,
 }

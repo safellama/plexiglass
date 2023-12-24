@@ -1,7 +1,7 @@
 Plexiglass
 ==========
 
-Plexiglass is an innovative toolbox designed to test vulnerabilities and safeguard Language Learning Models (LLMs), developed by Kortex Labs. This Python-based security toolbox operates with a focus on the rigorous testing and enhancement of security measures for LLMs.
+Plexiglass is an innovative toolbox designed to test vulnerabilities and safeguard Language Learning Models (LLMs), developed by SafeLlama. This Python-based security toolbox operates with a focus on the rigorous testing and enhancement of security measures for LLMs.
 
 Key Features
 ------------
@@ -20,7 +20,7 @@ Inspiration and Compatibility
 Community Involvement
 ---------------------
 
-- Kortex Labs emphasizes the importance of community involvement in Plexiglass's development. They are actively seeking contributors to further enrich the toolbox and extend its capabilities.
+- SafeLlama emphasizes the importance of community involvement in Plexiglass's development. They are actively seeking contributors to further enrich the toolbox and extend its capabilities.
 
 .. toctree::
    :caption: Install

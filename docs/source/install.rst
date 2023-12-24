@@ -21,11 +21,11 @@ Build from Source
 -----------------
 
 To build and install the Plexiglass python library from source, first, clone Plexiglass from
-`its GitHub repo <https://github.com/kortex-labs/plexiglass>`_:
+`its GitHub repo <https://github.com/safellama/plexiglass>`_:
 
 .. code-block:: shell
 
-   git clone git@github.com/kortex-labs/plexiglass.git plexiglass && cd plexiglass
+   git clone git@github.com/safellama/plexiglass.git plexiglass && cd plexiglass
 
 Then, install the Plexiglass python library with pip:
 
