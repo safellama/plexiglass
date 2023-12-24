@@ -3,7 +3,7 @@
 Plexiglass</h1>
 <!-- <p align="center"> -->
 
-[**Quickstart**](https://safellama.github.io/plexiglass/build/html/quick-start.html) | [**Installation**](#installation) |
+[**Quickstart**](#quickstart) | [**Installation**](#installation) |
 [**Documentation**](https://safellama.github.io/plexiglass/build/html/index.html) | [**Code of Conduct**](#code-of-conduct)
 
 <a href="https://badge.fury.io/py/plexiglass"><img src="https://badge.fury.io/py/plexiglass.svg" alt="PyPI version" height="18"></a>
@@ -15,6 +15,10 @@ Plexiglass is a toolkit for detecting and protecting against vulnerabilities in 
 
 Here's Plexiglass in action:
 ![alt](plexiglass/assets/example.png)
+
+## Quickstart
+
+Please follow this [quickstart guide](https://safellama.github.io/plexiglass/build/html/quick-start.html).
 
 ## Installation
 
