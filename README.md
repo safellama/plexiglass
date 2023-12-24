@@ -18,7 +18,7 @@ Here's Plexiglass in action:
 
 ## Quickstart
 
-Please follow this [quickstart guide](https://safellama.github.io/plexiglass/build/html/quick-start.html).
+Please follow this [quickstart guide](https://safellama.github.io/plexiglass/build/html/quick-start.html) in the documentation.
 
 ## Installation
 
