@@ -33,14 +33,23 @@ To download the package from PyPi:
 
 Plexiglass has two modes: `llm-chat` and `llm-scan`.
 
-`llm-chat` allows you to converse with the LLM and measure predefined metrics, such as toxicity, from its responses.
+`llm-chat` allows you to converse with the LLM and measure predefined metrics, such as toxicity, from its responses. It currently supports the following metrics:
+
+- `toxicity`
+- `pii_detection`
 
 `llm-scan` runs benchmarks using open-source datasets to identify and assess various vulnerabilities in the LLM.
 
 ## Feature Request
 To request new features, please submit an [issue](https://github.com/enochkan/plexiglass/issues)
 
-## Local Development
+## Development Roadmap
+
+- [ ] implement adversarial prompt templates in `llm-chat` mode
+- [ ] security, bias and toxicity benchmarking with `llm-scan` mode
+- [ ] generate html report in `llm-scan` and `llm-chat` modes
+- [ ] standalone python module
+- [ ] production-ready API
 
 [Join us in #plexiglass on Discord.](https://discord.gg/sHuzVV8tQv)
 
