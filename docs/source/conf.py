@@ -48,7 +48,7 @@ html_theme_options = {
     "navigation_with_keys": False,
 }
 
-html_logo = "_static/plexiglass.png"
+html_logo = "_static/plexiglass_safellama.png"
 
 html_title = "Plexiglass"
 
