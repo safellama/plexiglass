@@ -1,5 +1,5 @@
 <h1>
-<!-- <img src="plexiglass/assets/plexiglass.png" width="80" height="80"><br> -->
+<img src="plexiglass/assets/plexiglass_safellama.png" width="100" height="100"><br>
 Plexiglass</h1>
 <!-- <p align="center"> -->
 
