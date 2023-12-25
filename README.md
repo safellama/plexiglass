@@ -13,8 +13,9 @@ Plexiglass</h1>
 
 Plexiglass is a toolkit for detecting and protecting against vulnerabilities in Large Language Models (LLMs).
 
-Here's Plexiglass in action:
-![alt](plexiglass/assets/example.png)
+It is a simple command line interface (CLI) tool which allows users to quickly test LLMs against adversarial attacks such as prompt injection, jailbreaking and more. 
+
+Plexiglass also allows security, bias and toxicity benchmarking of multiple LLMs by scraping latest adversarial prompts such as [jailbreakchat.com](https://www.jailbreakchat.com/) and [wiki_toxic](https://huggingface.co/datasets/OxAISH-AL-LLM/wiki_toxic/viewer/default/train?p=1). See more at [modes](#modes).
 
 ## Quickstart
 
@@ -30,13 +31,11 @@ To download the package from PyPi:
 
 ## Modes
 
-Plexiglass can be used as a CLI tool as well as a standalone python lib (under development).
-
-The CLI tool has two modes: `llm-chat` and `llm-scan`.
+Plexiglass has two modes: `llm-chat` and `llm-scan`.
 
 `llm-chat` allows you to converse with the LLM and measure predefined metrics, such as toxicity, from its responses.
 
-`llm-scan` runs tests to identify and assess various vulnerabilities in the LLM.
+`llm-scan` runs benchmarks using open-source datasets to identify and assess various vulnerabilities in the LLM.
 
 ## Feature Request
 To request new features, please submit an [issue](https://github.com/enochkan/plexiglass/issues)
