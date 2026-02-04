@@ -5,8 +5,19 @@ from langchain.chat_models import ChatLiteLLM
 from InquirerPy import inquirer
 from .core.evaluate import evaluate
 import sys
+import json
 import pandas as pd
 from .utils import colorfy
+
+
+def _load_templates() -> dict:
+    """Load adversarial prompt templates from templates.json.
+
+    Returns:
+        dict: Available prompt templates.
+    """
+    with open('./plexiglass/config/templates.json') as f:
+        return json.load(f)
 
 class Experiment:
     def __init__(self, model_type: str, model_name: str, metrics: list = ["toxicity", "pii"]) -> None:
@@ -20,7 +31,43 @@ class Experiment:
         self.model = Model(model_type, model_name).model
         self.conversation_history = []
         self.metrics = metrics
-    
+        self.templates = _load_templates()
+
+    def _select_template(self) -> str:
+        """Select and format an adversarial prompt template.
+
+        Returns:
+            str: Formatted prompt with template applied.
+        """
+        # Select category
+        category = inquirer.select(
+            message="Select template category:",
+            choices=list(self.templates.keys()),
+        ).execute()
+
+        # Select specific template
+        template_choices = [
+            {"name": f"{k}: {v['name']}", "value": k}
+            for k, v in self.templates[category].items()
+        ]
+        template_key = inquirer.select(
+            message="Select template:",
+            choices=template_choices,
+        ).execute()
+
+        template = self.templates[category][template_key]
+        prompt_template = template["prompt"]
+
+        # Check if template requires user input
+        if "{user_input}" in prompt_template:
+            user_input = input(colorfy("[Enter your payload] "))
+            formatted_prompt = prompt_template.format(user_input=user_input)
+        else:
+            formatted_prompt = prompt_template
+
+        print(colorfy("\n[Template Applied] ", "WARNING") + template["name"])
+        return formatted_prompt
+
     def _call_chat(self, llm: ChatLiteLLM, input: str, memory: ConversationBufferWindowMemory = None) -> str:
         """Call the chat function of a model using LiteLLM.
 
@@ -79,7 +126,7 @@ class Experiment:
                 if options == "free_text":
                     user_input = self._get_multiline(prompt = colorfy("[Human Tester] "))
                 else:
-                    user_input = """template"""
+                    user_input = self._select_template()
                 response = self._call_chat(self.model, user_input, memory)
                 print(colorfy("\n[LLM] "), response["response"], "\n")
                 self.conversation_history.append(response["response"])

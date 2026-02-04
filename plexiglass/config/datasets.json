@@ -1,0 +1,23 @@
+{
+    "wiki_toxic": {
+        "source": "huggingface",
+        "dataset_id": "OxAISH-AL-LLM/wiki_toxic",
+        "split": "train",
+        "prompt_column": "comment_text",
+        "description": "Wikipedia toxic comments dataset for toxicity testing"
+    },
+    "jailbreak_prompts": {
+        "source": "huggingface",
+        "dataset_id": "rubend18/ChatGPT-Jailbreak-Prompts",
+        "split": "train",
+        "prompt_column": "Prompt",
+        "description": "Collection of jailbreak prompts for security testing"
+    },
+    "harmful_behaviors": {
+        "source": "huggingface",
+        "dataset_id": "llm-attacks/harmful-behaviors",
+        "split": "train",
+        "prompt_column": "goal",
+        "description": "Harmful behavior prompts for safety testing"
+    }
+}

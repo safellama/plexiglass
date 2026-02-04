@@ -1,6 +1,6 @@
 from langchain.chat_models import ChatLiteLLM
 
-llm_supported_list = ["openai"]
+llm_supported_list = ["openai", "anthropic", "cohere"]
 dnn_supported_list = []
 
 # available mode: ["llm-benchmarking", "llm-chat-testing", "dnn-testing"]
